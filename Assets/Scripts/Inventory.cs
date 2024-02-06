@@ -1,17 +1,52 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewMonoBehaviour : MonoBehaviour
+public class Inventory : MonoBehaviour
+
 {
-    // Use this for initialization
-    void Start()
-    {
+    // Inventory list
+    public GameObject[] inventory = new GameObject[10];
 
+
+    // Adding items to the the inventory list
+    public void addItem(GameObject item)
+    {
+        bool itemAdded = false;
+
+        for(int i = 0; i < inventory.Length; i++)
+        {
+            if(inventory[i] == null)
+            {
+                inventory[i] = item;
+                Debug.Log(item + " was added to the inventory!");
+                itemAdded = true;
+                break;
+            }
+        }
+
+        if (!itemAdded)
+        {
+            Debug.Log("Inventory full");
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+
+    // Removing item fom the inventory list
+    public void removeItem(GameObject item)
+    {
+        for(int i = 0; i < inventory.Length; i++)
+        {
+            if(inventory[i] == item)
+            {
+                inventory[i] = null;
+                Debug.Log(item + " was removed from the inventory!");
+                break;
+            }
+        }
     }
+
+
+
+
 }
