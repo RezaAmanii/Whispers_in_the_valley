@@ -20,6 +20,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        // Running 
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 5f;
+        else
+            speed = 2f;
+
         motionVector = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical"));
