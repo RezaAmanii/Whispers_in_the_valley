@@ -5,21 +5,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
-    Vector2 motionVector;
-    Animator animator;
+    public float speed;
+    public Rigidbody2D rb;
+    private Vector2 movement;
+    public Animator animator;
 
-    private void Awake()
-    {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-
-
+   
 
     void Update()
     {
@@ -30,23 +24,17 @@ public class PlayerMovement : MonoBehaviour
         else
             speed = 2f;
 
-        motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical"));
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
-
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void FixedUpdate()
     {
-
-        Move();
+        rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
     }
 
-    private void Move()
-    {
-        rigidbody2d.velocity = motionVector * speed;
-    }
 }
