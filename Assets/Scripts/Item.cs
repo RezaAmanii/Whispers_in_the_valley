@@ -1,7 +1,25 @@
 ﻿using System;
-public class NewClass
+
+[System.Serializable]
+public class Item
 {
-    public NewClass()
+    // Attributes
+
+    public int itemID;
+    public String itemName;
+    // Public Sprite itemSprite;
+    public String spriteName;
+
+
+
+
+    // Constructor
+
+    public Item(int id, String name, String sName)
     {
+        id = this.itemID;
+        name = this.itemName;
+        sName = this.spriteName;
+
     }
 }
