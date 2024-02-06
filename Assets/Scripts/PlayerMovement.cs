@@ -1,23 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
-    public Rigidbody2D rb;
-    private Vector2 movement;
+    Rigidbody2D rigidbody2d;
+    [SerializeField] float speed = 2f;
+    Vector2 motionVector;
+    Animator animator;
+
+    private void Awake()
+    {
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
 
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        movement = Vector2.ClampMagnitude(movement, 1);
+        motionVector = new Vector2(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical"));
+
+        animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
+        Move();
+    }
+
+    private void Move()
+    {
+        rigidbody2d.velocity = motionVector * speed;
     }
 }
