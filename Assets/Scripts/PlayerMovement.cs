@@ -1,5 +1,6 @@
 
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,33 +9,67 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 100f;
     public Rigidbody2D rb;
-    private Vector2 movement;
+    private Vector3 movementDirection;
+    public float x, y;
     public Animator animator;
+    private bool isWalking;
 
-   
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+ 
+        if(x != 0 || y != 0)
+        {
+            animator.SetFloat("Horizontal", x);
+            animator.SetFloat("Vertical", y);
 
-        // Running
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            speed = 5f;
+            if (!isWalking)
+            {
+                isWalking = true;
+                animator.SetBool("isMoving", isWalking);
+            }
+        }
         else
-            speed = 2f;
+        {
+            if (isWalking)
+            {
+                isWalking = false;
+                animator.SetBool("isMoving", isWalking);
+                StopMoving();
+            }
+        }
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movementDirection = new Vector3(x, y).normalized;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+       
+    }
+
+    private void StopMoving()
+    {
+        rb.velocity = Vector3.zero;
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + (movement * speed * Time.fixedDeltaTime));
+        rb.velocity = movementDirection * speed * Time.deltaTime;
+
+        // Running
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 180f;
+        else
+        {
+            speed = 100f;
+        }
+
     }
 
 }
