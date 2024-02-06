@@ -1,7 +1,9 @@
-using System;
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -18,8 +20,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
     void Update()
     {
+
         // Running
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             speed = 5f;
@@ -33,11 +37,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
         animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
 
-       
     }
 
     private void FixedUpdate()
     {
+
         Move();
     }
 
