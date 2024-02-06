@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Running 
+        // Running
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             speed = 5f;
         else
@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
         animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
+
+       
     }
 
     private void FixedUpdate()
