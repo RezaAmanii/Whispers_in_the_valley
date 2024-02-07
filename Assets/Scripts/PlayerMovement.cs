@@ -6,10 +6,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
-    Vector2 motionVector;
-    Animator animator;
+
+    public float speed = 100f;
+    public Rigidbody2D rb;
+    private Vector2 movementDirection;
+    public float x, y;
+    public Animator animator;
+    private bool isWalking;
+
 
     private void Awake()
     {
@@ -26,21 +30,26 @@ public class PlayerMovement : MonoBehaviour
         else
             speed = 2f;
 
-        motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical"));
 
-        animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
-        animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
+        movementDirection = new Vector2(x, y).normalized;
+
+
+        // Running
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 180f;
+        else
+        {
+            speed = 100f;
+        }
+    }
+
+    private void StopMoving()
+    {
+        rb.velocity = Vector2.zero;
     }
 
     private void FixedUpdate()
     {
-        Move();
-    }
-
-    private void Move()
-    {
-        rigidbody2d.velocity = motionVector * speed;
+        rb.velocity = movementDirection * speed * Time.deltaTime;
     }
 }
