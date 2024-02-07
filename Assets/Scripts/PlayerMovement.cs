@@ -33,14 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
         movementDirection = new Vector2(x, y).normalized;
 
-
-        // Running
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            speed = 180f;
-        else
-        {
-            speed = 100f;
-        }
+       
     }
 
     private void StopMoving()
@@ -51,5 +44,14 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = movementDirection * speed * Time.deltaTime;
+
+        // Running
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 180f;
+        else
+        {
+            speed = 100f;
+        }
+
     }
 }
