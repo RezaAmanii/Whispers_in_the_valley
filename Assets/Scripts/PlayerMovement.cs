@@ -1,14 +1,12 @@
-
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
+
     public float speed = 100f;
     public Rigidbody2D rb;
     private Vector2 movementDirection;
@@ -17,36 +15,21 @@ public class PlayerMovement : MonoBehaviour
     private bool isWalking;
 
 
-    private void Start()
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
+
 
     void Update()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
- 
-        if(x != 0 || y != 0)
-        {
-            animator.SetFloat("Horizontal", x);
-            animator.SetFloat("Vertical", y);
-
-            if (!isWalking)
-            {
-                isWalking = true;
-                animator.SetBool("isMoving", isWalking);
-            }
-        }
+        // Running 
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 5f;
         else
-        {
-            if (isWalking)
-            {
-                isWalking = false;
-                animator.SetBool("isMoving", isWalking);
-                StopMoving();
-            }
-        }
+            speed = 2f;
+
 
         movementDirection = new Vector2(x, y).normalized;
 
@@ -69,5 +52,4 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = movementDirection * speed * Time.deltaTime;
     }
-
 }
