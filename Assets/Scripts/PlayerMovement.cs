@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 100f;
     public Rigidbody2D rb;
-    private Vector3 movementDirection;
+    private Vector2 movementDirection;
     public float x, y;
     public Animator animator;
     private bool isWalking;
@@ -48,14 +48,14 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        movementDirection = new Vector3(x, y).normalized;
+        movementDirection = new Vector2(x, y).normalized;
 
        
     }
 
     private void StopMoving()
     {
-        rb.velocity = Vector3.zero;
+        rb.velocity = Vector2.zero;
     }
 
     private void FixedUpdate()
