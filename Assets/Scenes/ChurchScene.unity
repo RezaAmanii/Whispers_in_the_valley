@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 450619141}
   - component: {fileID: 450619140}
   m_Layer: 0
-  m_Name: InventorySlot_Left
+  m_Name: InventorySlots_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,11 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb8f971035c6d32469c969760820c913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
-  rb: {fileID: 953787974}
-  x: 0
-  y: 0
-  animator: {fileID: 953787970}
+  speed: 2
 --- !u!50 &953787974
 Rigidbody2D:
   serializedVersion: 4
@@ -573,7 +569,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!1 &1780855277
 GameObject:
   m_ObjectHideFlags: 0

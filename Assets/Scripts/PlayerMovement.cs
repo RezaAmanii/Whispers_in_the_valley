@@ -1,75 +1,46 @@
-
-
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 100f;
-    public Rigidbody2D rb;
-    private Vector3 movementDirection;
-    public float x, y;
-    public Animator animator;
-    private bool isWalking;
+    Rigidbody2D rigidbody2d;
+    [SerializeField] float speed = 2f;
+    Vector2 motionVector;
+    Animator animator;
 
-
-    private void Start()
+    private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
+
 
     void Update()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
- 
-        if(x != 0 || y != 0)
-        {
-            animator.SetFloat("Horizontal", x);
-            animator.SetFloat("Vertical", y);
-
-            if (!isWalking)
-            {
-                isWalking = true;
-                animator.SetBool("isMoving", isWalking);
-            }
-        }
+        // Running 
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            speed = 5f;
         else
-        {
-            if (isWalking)
-            {
-                isWalking = false;
-                animator.SetBool("isMoving", isWalking);
-                StopMoving();
-            }
-        }
+            speed = 2f;
 
-        movementDirection = new Vector3(x, y).normalized;
+        motionVector = new Vector2(
+            Input.GetAxisRaw("Horizontal"),
+            Input.GetAxisRaw("Vertical"));
 
-       
-    }
-
-    private void StopMoving()
-    {
-        rb.velocity = Vector3.zero;
+        animator.SetFloat("horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("vertical", Input.GetAxisRaw("Vertical"));
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = movementDirection * speed * Time.deltaTime;
-
-        // Running
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            speed = 180f;
-        else
-        {
-            speed = 100f;
-        }
-
+        Move();
     }
 
+    private void Move()
+    {
+        rigidbody2d.velocity = motionVector * speed;
+    }
 }
