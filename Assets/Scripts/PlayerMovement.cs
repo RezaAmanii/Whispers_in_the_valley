@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -15,32 +15,48 @@ public class PlayerMovement : MonoBehaviour
     private bool isWalking;
 
 
-    private void Awake()
+    public void Start()
     {
-        rigidbody2d = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
 
     void Update()
     {
+
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+
+        if(x != 0 || y != 0)
+        {
+            animator.SetFloat("Horizontal", x);
+            animator.SetFloat("Vertical", y);
+
+            if (!isWalking)
+            {
+                isWalking = true;
+                animator.SetBool("isMoving", isWalking);
+            }
+
+        } else
+        {
+            if (isWalking)
+            {
+                isWalking = false;
+                animator.SetBool("isMoving", isWalking);
+                StopMoving();
+            }
+        }
+
+
+        movementDirection = new Vector3(x, y).normalized;
+
         // Running 
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
-            speed = 5f;
-        else
-            speed = 2f;
-
-
-        movementDirection = new Vector2(x, y).normalized;
-
-
-        // Running
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             speed = 180f;
         else
-        {
             speed = 100f;
-        }
+
     }
 
     private void StopMoving()
@@ -51,5 +67,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = movementDirection * speed * Time.deltaTime;
+
+
     }
 }
