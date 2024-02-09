@@ -29,10 +29,12 @@ public class VillagerAI : MonoBehaviour
     private Vector2 baseVector = Vector2.up;
     private float speed;
     private Action mode;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         playerRb = playerGameObject.GetComponent<Rigidbody2D>();
         speed = moveSpeed;
         mode = Move;
@@ -53,6 +55,32 @@ public class VillagerAI : MonoBehaviour
     {
         float target = Vector2.SignedAngle(baseVector, rb.position - points[currentDestination]);
         //Debug.Log("angle: " + angle + " target: " + target + " position: " + rb.position + " target: " + points[current]);
+      
+        if (-45 < angle && angle <= 45 || 315 < angle && angle <= 305)
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 1);
+        }
+        else if (45 < angle && angle <= 135)
+        {
+            animator.SetFloat("Horizontal", 1);
+            animator.SetFloat("Vertical", 0);
+        }
+        else if ((135 < angle && angle <= 225))
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", -1);
+        }
+        else if (225 < angle && angle <= 315)
+        {
+            animator.SetFloat("Horizontal", -1);
+            animator.SetFloat("Vertical", 0);
+        }
+
+
+
+
+
 
         if (angle == target)
         {
