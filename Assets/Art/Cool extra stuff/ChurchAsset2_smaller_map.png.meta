@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 27560d03e1529cb45bc3e8bd4c479152
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 1, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf95939d6edc2449f6b327bf9abc9f
+      internalID: -1594362153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1, y: 12}
+        - {x: -12, y: 1}
+        - {x: -12, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 0}
+        - {x: 0, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1b39caec542bf4ba31936ea31a5b9b
+      internalID: -638749725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_2
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 168
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 0}
+        - {x: -12, y: -12}
+        - {x: -2, y: -12}
+        - {x: -4, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63281b1992adb6246b4c4d9aaa70fbb4
+      internalID: 721074131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6156d276fbae7439956d9db7bd138b
+      internalID: 2094900335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 12}
+        - {x: -12, y: -2}
+        - {x: -12, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06a22d3528b61d49b9cf57a309619c9
+      internalID: -1868870814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97609c54abd7a63428b624824973eed9
+      internalID: -1257315255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: -4}
+        - {x: -2, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ded1db77ce86849b49e3831585289f
+      internalID: -1117551472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 144
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: -4}
+        - {x: -12, y: -12}
+        - {x: -1, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34902490a7f2de54ca109438534f9309
+      internalID: 12021092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_8
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 12}
+        - {x: -6, y: 10}
+        - {x: -6, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80169e26c262454db74d9650d8eea83
+      internalID: -1141373738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4badf8cb1dbb5724e97235837e441608
+      internalID: -2064399676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aab37e35241c974886c05acb17a2d71
+      internalID: 712143441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_11
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2b08dfb869c934ca5508bc076aed81
+      internalID: 722599189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 120
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -12}
+        - {x: 6, y: -12}
+        - {x: 6, y: 11}
+        - {x: 0, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52e6ed001c9a684798ae647eb15cd13
+      internalID: -171557535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_13
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 12}
+        - {x: -6, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffff23452f8fddd43aa10133c6ed6b4f
+      internalID: 981366714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cf56e32034aa14880e0a69b760872b
+      internalID: 701595185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891b0ec69875c904b8631c67c00b4b2d
+      internalID: -1190957326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac96e61d3675ea946af155783910b9fc
+      internalID: -1094233316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_17
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 96
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -12}
+        - {x: 6, y: 12}
+        - {x: -12, y: 12}
+        - {x: -12, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe4928fbbb9208488cb03617057803f
+      internalID: 1530625950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_18
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 12}
+        - {x: -6, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc6958eb455fcf478a95088cfaafd84
+      internalID: -1570949180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_19
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d88f1e98d2249f4ebc09ea3b72ee2b9
+      internalID: 2071667557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_20
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44b68e9533556c4781268e9584b7559
+      internalID: -1204637031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_21
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c575f1bc18bed41b377fede31ab5b6
+      internalID: 2042500020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_22
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -12}
+        - {x: 6, y: 12}
+        - {x: -12, y: 12}
+        - {x: -12, y: -12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3516bfaa4d9b1439ed92a03bb8c0d2
+      internalID: -878959979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_23
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: 12}
+        - {x: -6, y: 9}
+        - {x: -5, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a75b1eb5b5e4b4889c07b821601ed0
+      internalID: -394314320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc29e35f89c73934cafd44eb549b3aac
+      internalID: -1530841283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_25
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748643e36f7cc0d4e84073c3a7b3dacf
+      internalID: 1694738849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_26
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9222aad3b9d462040a510468c20eda31
+      internalID: -776815054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_27
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -12}
+        - {x: 5, y: -12}
+        - {x: 6, y: 9}
+        - {x: 6, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: da64562fb79ed624f82232fe5443d69a
+      internalID: 72147332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_28
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5, y: 12}
+        - {x: -7, y: -12}
+        - {x: 9, y: -8}
+        - {x: 9, y: -3}
+        - {x: 12, y: -3}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36883697b6d52204ea510ca946b37d40
+      internalID: -1233608626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_29
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -3}
+        - {x: 0, y: -3}
+        - {x: 0, y: -8}
+        - {x: 3, y: -9}
+        - {x: 4, y: -12}
+        - {x: 12, y: -12}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da2455772df204428adf6a672360647
+      internalID: -1500163457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_30
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -9}
+        - {x: 12, y: -9}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b0c2d408725e94abcb40c248933620
+      internalID: -1986381093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_31
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -12}
+        - {x: 0, y: -7}
+        - {x: 0, y: -3}
+        - {x: 12, y: -3}
+        - {x: 12, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91ef5a85dfae03459d559116e148526
+      internalID: 1631257293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_32
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: 12}
+        - {x: -12, y: -3}
+        - {x: -9, y: -3}
+        - {x: -3, y: -9}
+        - {x: 4, y: -9}
+        - {x: 4, y: -12}
+        - {x: 7, y: -12}
+        - {x: 5, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b321e4b8ddf635e47a051a290ccc9dca
+      internalID: -677932871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_33
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: 12}
+        - {x: -7, y: -2}
+        - {x: -4, y: -2}
+        - {x: -4, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1408478b16d250438342567c83af78d
+      internalID: 1609604835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_34
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: 12}
+        - {x: 3, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: -12}
+        - {x: 9, y: -12}
+        - {x: 9, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b581e9b84a4d53c41a4512c705f25ab3
+      internalID: -748381034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_35
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473ed3fc2637ced45bced2ac3a9af453
+      internalID: -310792420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_36
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -9, y: 12}
+        - {x: -9, y: -12}
+        - {x: -7, y: -12}
+        - {x: -7, y: -2}
+        - {x: -4, y: -2}
+        - {x: -4, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e69b1f69da20f4b86fe9b114908ac9
+      internalID: 1543340977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChurchAsset2_smaller_map_37
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 12}
+        - {x: 4, y: -2}
+        - {x: 7, y: -2}
+        - {x: 7, y: 12}
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6042d0824fecc49a8ed6a8568df115
+      internalID: 1590337569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -21, y: 74}
+      - {x: -21, y: 67}
+      - {x: -49, y: 46}
+      - {x: -54, y: 46}
+      - {x: -55, y: -86}
+      - {x: -17, y: -86}
+      - {x: -17, y: -96}
+      - {x: -15, y: -96}
+      - {x: 15, y: -96}
+      - {x: 17, y: -96}
+      - {x: 17, y: -86}
+      - {x: 55, y: -86}
+      - {x: 54, y: 46}
+      - {x: 47, y: 47}
+      - {x: 20, y: 67}
+      - {x: 20, y: 74}
+      - {x: 0, y: 95}
+    physicsShape:
+    - - {x: -55, y: -86}
+      - {x: -15, y: -86}
+      - {x: -15, y: -73}
+      - {x: -11, y: -73}
+      - {x: -11, y: -68}
+      - {x: 10, y: -68}
+      - {x: 10, y: -73}
+      - {x: 15, y: -73}
+      - {x: 15, y: -86}
+      - {x: 54, y: -86}
+      - {x: 54, y: 47}
+      - {x: 46, y: 47}
+      - {x: 20, y: 66}
+      - {x: 20, y: 74}
+      - {x: -1, y: 95}
+      - {x: -21, y: 74}
+      - {x: -21, y: 66}
+      - {x: -48, y: 46}
+      - {x: -54, y: 46}
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ChurchAsset2_smaller_map_0: -1594362153
+      ChurchAsset2_smaller_map_1: -638749725
+      ChurchAsset2_smaller_map_10: 712143441
+      ChurchAsset2_smaller_map_11: 722599189
+      ChurchAsset2_smaller_map_12: -171557535
+      ChurchAsset2_smaller_map_13: 981366714
+      ChurchAsset2_smaller_map_14: 701595185
+      ChurchAsset2_smaller_map_15: -1190957326
+      ChurchAsset2_smaller_map_16: -1094233316
+      ChurchAsset2_smaller_map_17: 1530625950
+      ChurchAsset2_smaller_map_18: -1570949180
+      ChurchAsset2_smaller_map_19: 2071667557
+      ChurchAsset2_smaller_map_2: 721074131
+      ChurchAsset2_smaller_map_20: -1204637031
+      ChurchAsset2_smaller_map_21: 2042500020
+      ChurchAsset2_smaller_map_22: -878959979
+      ChurchAsset2_smaller_map_23: -394314320
+      ChurchAsset2_smaller_map_24: -1530841283
+      ChurchAsset2_smaller_map_25: 1694738849
+      ChurchAsset2_smaller_map_26: -776815054
+      ChurchAsset2_smaller_map_27: 72147332
+      ChurchAsset2_smaller_map_28: -1233608626
+      ChurchAsset2_smaller_map_29: -1500163457
+      ChurchAsset2_smaller_map_3: 2094900335
+      ChurchAsset2_smaller_map_30: -1986381093
+      ChurchAsset2_smaller_map_31: 1631257293
+      ChurchAsset2_smaller_map_32: -677932871
+      ChurchAsset2_smaller_map_33: 1609604835
+      ChurchAsset2_smaller_map_34: -748381034
+      ChurchAsset2_smaller_map_35: -310792420
+      ChurchAsset2_smaller_map_36: 1543340977
+      ChurchAsset2_smaller_map_37: 1590337569
+      ChurchAsset2_smaller_map_4: -1868870814
+      ChurchAsset2_smaller_map_5: -1257315255
+      ChurchAsset2_smaller_map_6: -1117551472
+      ChurchAsset2_smaller_map_7: 12021092
+      ChurchAsset2_smaller_map_8: -1141373738
+      ChurchAsset2_smaller_map_9: -2064399676
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
