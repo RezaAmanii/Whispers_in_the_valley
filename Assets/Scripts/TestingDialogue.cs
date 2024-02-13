@@ -24,6 +24,7 @@ public class TestingDialogue : MonoBehaviour
     private int currentID;
 
     private PlayerMovement playerMovement;
+    private bool isActive = false;
     private VillagerAI npcMovement;
     private Animator npcAnimation;
 
@@ -70,6 +71,9 @@ public class TestingDialogue : MonoBehaviour
 
     public void StartDialogue(int index)
     {
+        if (isActive) { return; }
+        isActive = true; 
+
         gameObject.SetActive(true);
         //this.GetComponent<PlayerMovement>().enabled = false;
         this.index = 0;
@@ -118,10 +122,11 @@ public class TestingDialogue : MonoBehaviour
         }
         else
         {
+            isActive = false;
             index = 0;
             dialogueTextComponent.text = string.Empty;
             gameObject.SetActive(false);
-            playerInteract.FinishInteraction(); //stuff here
+            //playerInteract.FinishInteraction(); //stuff here
 
             //this.GetComponent<PlayerMovement>().enabled = true; 
             if (playerMovement != null)

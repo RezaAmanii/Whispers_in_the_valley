@@ -8,7 +8,7 @@ using UnityEngine.Experimental.Rendering;
 public class PlayerInteract : MonoBehaviour
 {
     public UnityEvent interactPressedEvent = new UnityEvent();
-    private bool isInteracting = false; // Track interaction state
+    //private bool isInteracting = false; // Track interaction state
 
     // Start is called before the first frame update
     void Start()
@@ -29,18 +29,18 @@ public class PlayerInteract : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isInteracting && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            isInteracting = true; // Set interaction state to true
+            
             interactPressedEvent.Invoke();
         }
     }
 
     // Call this method when the interaction is finished
-    public void FinishInteraction()
-    {
-        isInteracting = false; // Reset interaction state
-    }
+    //public void FinishInteraction()
+    //{
+    //    isInteracting = false; // Reset interaction state
+    //}
 }
 //public void StartInteraction()
 //{
