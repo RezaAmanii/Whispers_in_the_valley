@@ -11,7 +11,6 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
 
-    public GameObject playerGameObject;
     public UnityEvent interactableEvent = new UnityEvent();
     private PlayerInteract playerInteract;
     private Collider2D playerCollider;
@@ -19,8 +18,8 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
-        playerInteract = playerGameObject.GetComponent<PlayerInteract>();
-        playerCollider = playerGameObject.GetComponent<Collider2D>();
+        playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
+        playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
     }
 
 

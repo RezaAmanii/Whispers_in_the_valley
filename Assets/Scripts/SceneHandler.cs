@@ -1,21 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneHandler : MonoBehaviour
 {
-    public GameObject MC;
+
+    private GameObject MC;
+
+
+    private string[] Scenes = { "TheWhisperingInn", "TownScene" };
+    private Vector2[] positions = { new Vector2(-9,-20), new Vector2(-12, -12) };
+
 
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
+        MC = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public void ChangeScene(string sceneName, float x, float y)
+    public void ChangeScene(int SceneIndex)
     {
-        SceneManager.LoadScene(sceneName);
-        MC.transform.position = new Vector3(x, y, 0);
+        MC.transform.position = positions[SceneIndex];
+        SceneManager.LoadScene(Scenes[SceneIndex]);
     }
 }
