@@ -30,6 +30,7 @@ public class VillagerAI : MonoBehaviour
     private float speed;
     private Action mode;
     private Animator animator;
+    private Action lastMode;
 
     void Start()
     {
@@ -53,6 +54,7 @@ public class VillagerAI : MonoBehaviour
     //turn NPC towards the new destination
     private void Turn()
     {
+        animator.SetBool("isInteracting", true);
         float target = Vector2.SignedAngle(baseVector, rb.position - points[currentDestination]);
         //Debug.Log("angle: " + angle + " target: " + target + " position: " + rb.position + " target: " + points[current]);
       
@@ -91,6 +93,7 @@ public class VillagerAI : MonoBehaviour
     //move NPC towards next destination, when arrived wait and then turn
     private void Move()
     {
+        animator.SetBool("isInteracting", false);
         Vector2 position = rb.position;
         if (math.abs(position.x - points[currentDestination].x) == 0 &&
             math.abs(position.y - points[currentDestination].y) == 0)
@@ -102,6 +105,40 @@ public class VillagerAI : MonoBehaviour
         }
         Vector2 newPosition = Vector2.MoveTowards(position, points[currentDestination], speed * Time.fixedDeltaTime);
         rb.MovePosition(newPosition);
+    }
+
+    private void Idle()
+    {
+        animator.SetBool("isInteracting", true);
+    }
+
+    public void SetMoving()
+    {
+        if (mode == Idle)
+        {
+            mode = lastMode;
+        }
+    }
+
+    public void SetIdle()
+    {
+        if (mode != Idle)
+        {
+            lastMode = mode;
+            mode = Idle;
+        }
+    }
+
+    public void SwitchIdle()
+    {
+        if (mode == Idle)
+        {
+            SetMoving();
+        }
+        else
+        {
+            SetIdle();
+        }
     }
 
     private void MoveAnchor() 
