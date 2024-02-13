@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     private static GameMaster instance;
+    public Vector2 lastCheckPointposition;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class GameMaster : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            Debug.Log("Hej");
         }
     }
 }
