@@ -33,7 +33,7 @@ public class Interactable : MonoBehaviour
     {
         if (other == playerCollider)
         {
-            playerInteract.AddAction(RunEvent);
+            playerInteract.AddAction(RunEvent); // add a paramater of ID - this id tells the player which conversations to call from the dialog system
         }
     }
 

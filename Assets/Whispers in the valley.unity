@@ -396,32 +396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1292556191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8296841474579630303, guid: df3d6ce6ff6ee4f45a480d2de9f6a7ca, type: 3}
-  m_PrefabInstance: {fileID: 1482778299}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1292556192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292556191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd4c6bfbaebc33f4d866311749d7b04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueTextComponent: {fileID: 367982879}
-  nameTextComponent: {fileID: 1850534242}
-  dialogueLines:
-  - 'my name victor '
-  - "baserad och r\xF6dpillad"
-  - 'subscribe '
-  nameLines:
-  - Victor
-  textSpeed: 0
 --- !u!1001 &1482778299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -486,10 +460,7 @@ PrefabInstance:
     - {fileID: 32324730122140214, guid: df3d6ce6ff6ee4f45a480d2de9f6a7ca, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8296841474579630303, guid: df3d6ce6ff6ee4f45a480d2de9f6a7ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1292556192}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df3d6ce6ff6ee4f45a480d2de9f6a7ca, type: 3}
 --- !u!1 &1615252724 stripped
 GameObject:

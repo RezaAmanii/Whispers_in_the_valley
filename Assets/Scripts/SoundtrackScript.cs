@@ -28,7 +28,7 @@ public class SoundtrackScript : MonoBehaviour
     private void Update()
     {
         // Check for input to switch soundtracks
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.B))
         {
             // Toggle between soundtracks
             ToggleSoundtrack();

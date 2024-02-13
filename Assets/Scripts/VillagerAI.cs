@@ -29,6 +29,9 @@ public class VillagerAI : MonoBehaviour
     private Vector2 baseVector = Vector2.up;
     private float speed;
     private Action mode;
+    //stop at dialogue stuff here
+    public bool canMove = true;
+
 
     void Start()
     {
