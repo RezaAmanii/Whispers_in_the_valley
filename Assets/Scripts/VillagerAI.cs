@@ -19,7 +19,7 @@ public class VillagerAI : MonoBehaviour
     public float visionAngle = 30;
     public float visionRange = 5;
     public GameObject anchor; //rotate this when the angle of the NPC changes (can be left null)
-    public GameObject playerGameObject; //use this to find player (needed to run script)
+    private GameObject playerGameObject; //use this to find player (needed to run script)
     public UnityEvent playerFoundEvent = new UnityEvent();
 
     private Rigidbody2D rb;
@@ -34,6 +34,7 @@ public class VillagerAI : MonoBehaviour
 
     void Start()
     {
+        playerGameObject = GameObject.FindGameObjectWithTag("Player").gameObject;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerRb = playerGameObject.GetComponent<Rigidbody2D>();
@@ -138,6 +139,7 @@ public class VillagerAI : MonoBehaviour
         else
         {
             SetIdle();
+            
         }
     }
 
