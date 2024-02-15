@@ -162,7 +162,7 @@ public class VillagerAI : MonoBehaviour
         if ((math.abs(angleDifference) < visionAngle) && (Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).rigidbody == playerRb)) 
         {
             playerFoundEvent.Invoke();
-            Debug.Log("player found!");
+            //Debug.Log("player found!");
         }
     }
 
