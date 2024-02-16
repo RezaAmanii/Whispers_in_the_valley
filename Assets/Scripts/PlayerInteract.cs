@@ -31,8 +31,10 @@ public class PlayerInteract : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            
+            Debug.Log("Player has interacted! Yippieeeee");
             interactPressedEvent.Invoke();
+
+            
         }
     }
 

@@ -577,7 +577,7 @@ GameObject:
   - component: {fileID: 128158761}
   m_Layer: 0
   m_Name: CM vcam1
-  m_TagString: Untagged
+  m_TagString: CM camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -659,17 +659,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3185607437015536162, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
   m_PrefabInstance: {fileID: 7122401347611981512}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &277795652 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
-  m_PrefabInstance: {fileID: 7122401347611981512}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd4c6bfbaebc33f4d866311749d7b04f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &279777997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,9 +2720,9 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 277795652}
-        m_TargetAssemblyTypeName: TestingDialogue, Assembly-CSharp
-        m_MethodName: StartDialogue
+      - m_Target: {fileID: 401767719}
+        m_TargetAssemblyTypeName: DialogueEvent, Assembly-CSharp
+        m_MethodName: run
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2743,7 +2732,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  isRepeatable: 0
+  isRepeatable: 1
+--- !u!114 &401767719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401767700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfff6ed06d80dde42a0eb389fa686d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 0}
 --- !u!1 &404279964
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,12 +5501,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 952882518}
         m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
-        m_MethodName: GoToChurchScene
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5700,6 +5702,8 @@ GameObject:
   - component: {fileID: 989028268}
   - component: {fileID: 989028267}
   - component: {fileID: 989028270}
+  - component: {fileID: 989028271}
+  - component: {fileID: 989028272}
   m_Layer: 0
   m_Name: NPC(Mathew)
   m_TagString: NPC
@@ -5810,9 +5814,9 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 277795652}
-        m_TargetAssemblyTypeName: TestingDialogue, Assembly-CSharp
-        m_MethodName: StartDialogue
+      - m_Target: {fileID: 989028271}
+        m_TargetAssemblyTypeName: DialogueEvent, Assembly-CSharp
+        m_MethodName: run
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5880,7 +5884,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -5894,7 +5898,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &989028270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5919,6 +5923,64 @@ MonoBehaviour:
   playerFoundEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &989028271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989028263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfff6ed06d80dde42a0eb389fa686d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: {fileID: 0}
+--- !u!61 &989028272
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989028263}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.8125}
+    newSize: {x: 0.75, y: 0.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.74, y: 0.8125}
+  m_EdgeRadius: 0
 --- !u!1 &990590762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3306762432509063527, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
@@ -40376,6 +40438,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4335717371046364968, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 401767712}
+    - targetCorrespondingSourceObject: {fileID: 4335717371046364968, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401767719}
   m_SourcePrefab: {fileID: 100100000, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
 --- !u!1001 &4495506356021935230
 PrefabInstance:
@@ -40385,6 +40450,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 495891018159728925, guid: e3372464be0aa4a40a9bb4ed2d6c13dc, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
     - target: {fileID: 1517468777799688336, guid: e3372464be0aa4a40a9bb4ed2d6c13dc, type: 3}
       propertyPath: slots.Array.data[0]
       value: 
@@ -40594,7 +40663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
       propertyPath: dialogueLines.Array.data[0].name
-      value: Lawrence
+      value: Innkeeper
       objectReference: {fileID: 0}
     - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
       propertyPath: dialogueLines.Array.data[1].name
@@ -40619,6 +40688,14 @@ PrefabInstance:
     - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
       propertyPath: dialogueLines.Array.data[3].speech.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+      propertyPath: dialogueLines.Array.data[0].speech.Array.data[0]
+      value: Welcome!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+      propertyPath: dialogueLines.Array.data[0].speech.Array.data[1]
+      value: Feel free to sit down and take a breather.
       objectReference: {fileID: 0}
     - target: {fileID: 6252382286875370446, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
       propertyPath: dialogueLines.Array.data[1].speech.Array.data[0]
@@ -40662,11 +40739,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6650317035464804973, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+      propertyPath: m_TagString
+      value: Canvas
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6650317035464804973, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7122401347611981514}
   m_SourcePrefab: {fileID: 100100000, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+--- !u!1 &7122401347611981513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6650317035464804973, guid: b06d032a69e15a3429a5abbd4bfea213, type: 3}
+  m_PrefabInstance: {fileID: 7122401347611981512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7122401347611981514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7122401347611981513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96580c5466b8b6f478c964b83ee8ed5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

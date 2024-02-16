@@ -32,10 +32,7 @@ public class TestingDialogue : MonoBehaviour
         dialogueTextComponent.text = string.Empty;
         nameTextComponent.text = string.Empty;
         playerMovement = FindObjectOfType<PlayerMovement>();
-        if (playerMovement == null)
-        {
-            Debug.LogError("PlayerMovement component not found!");
-        }
+        
     }
 
     // Update is called once per frame

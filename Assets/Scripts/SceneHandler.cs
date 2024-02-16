@@ -10,8 +10,8 @@ public class SceneHandler : MonoBehaviour
     private GameObject MC;
 
 
-    private string[] Scenes = { "TheWhisperingInn", "TownScene", "ChurchScene" };
-    private Vector2[] positions = { new Vector2(-9, -20), new Vector2(-12, -12), new Vector2(0, -6) };
+    private string[] Scenes = { "TheWhisperingInn", "TownScene", "TownScene", "ChurchScene" }; // town scenes in index order: TownScene(Default) = 1, TownScene(Exit Church) = 2
+    private Vector2[] positions = { new Vector2(-9, -20), new Vector2(-12, -12), new Vector2(24, -6), new Vector2(0, -6) };
 
 
     // Start is called before the first frame update
@@ -26,13 +26,4 @@ public class SceneHandler : MonoBehaviour
         SceneManager.LoadScene(Scenes[SceneIndex]);
     }
 
-    public void GoToTownScene()
-    {
-        ChangeScene(1); // Index 1 corresponds to the town scene in the Scenes array
-    }
-
-    public void GoToChurchScene()
-    {
-        ChangeScene(2); // Index 1 corresponds to the town scene in the Scenes array
-    }
 }
