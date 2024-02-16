@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundtrackScript : MonoBehaviour
 {
     public AudioClip firstSoundtrack;
     public AudioClip secondSoundtrack;
 
+    private static SoundtrackScript instance;
     private AudioSource audioSource;
 
     private void Awake()
     {
-        // Ensure this GameObject persists across scene changes
-        DontDestroyOnLoad(gameObject);
+        // Ensure only one instance of SoundtrackScript exists
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         // Get or add an AudioSource component
         audioSource = GetComponent<AudioSource>();
@@ -27,31 +38,26 @@ public class SoundtrackScript : MonoBehaviour
 
     private void Update()
     {
-        // Check for input to switch soundtracks
         if (Input.GetKeyDown(KeyCode.B))
         {
-            // Toggle between soundtracks
             ToggleSoundtrack();
         }
     }
 
     private void PlayFirstSoundtrack()
     {
-        // Set the first soundtrack clip and play it
         audioSource.clip = firstSoundtrack;
         audioSource.Play();
     }
 
     private void PlaySecondSoundtrack()
     {
-        // Set the second soundtrack clip and play it
         audioSource.clip = secondSoundtrack;
         audioSource.Play();
     }
 
     private void ToggleSoundtrack()
     {
-        // Toggle between the first and second soundtrack
         if (audioSource.clip == firstSoundtrack)
         {
             PlaySecondSoundtrack();

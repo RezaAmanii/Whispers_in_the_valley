@@ -76,15 +76,19 @@ public class TestingDialogue : MonoBehaviour
 
         gameObject.SetActive(true);
         //this.GetComponent<PlayerMovement>().enabled = false;
+        
+        if (playerMovement != null)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().StopMoving();
+            playerMovement.enabled = false;
+
+        }
         this.index = 0;
         currentID = index;
         nameTextComponent.text = dialogueLines[currentID].name;
         StartCoroutine(TypeLine());
         // NEW STUFF HERE
-        if (playerMovement != null)
-        {
-            playerMovement.enabled = false;
-        }
+
         //if (npcMovement != null)
         //{
         //    npcMovement.canMove = false;
@@ -93,7 +97,7 @@ public class TestingDialogue : MonoBehaviour
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
         foreach (GameObject npc in npcs)
         {
-            npc.GetComponent<VillagerAI>().enabled = false;
+            npc.GetComponent<VillagerAI>().SetIdle();
             npc.GetComponent<Animator>().enabled = false;
         }
 
@@ -142,7 +146,7 @@ public class TestingDialogue : MonoBehaviour
             GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
             foreach (GameObject npc in npcs)
             {
-                npc.GetComponent<VillagerAI>().enabled = true;
+                npc.GetComponent<VillagerAI>().SetMoving();
                 npc.GetComponent<Animator>().enabled = true;
             }
 

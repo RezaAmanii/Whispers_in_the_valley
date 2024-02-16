@@ -4,36 +4,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-
-
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))] //collider should be set to onTrigger
 public class Interactable : MonoBehaviour
 {
-
-    public GameObject playerGameObject;
     public UnityEvent interactableEvent = new UnityEvent();
+    public bool isRepeatable = true; // Flag to indicate if interaction can be repeated
     private PlayerInteract playerInteract;
     private Collider2D playerCollider;
-
+    private bool hasInteracted = false; // Flag to track if interaction has occurred
 
     private void Start()
     {
-        playerInteract = playerGameObject.GetComponent<PlayerInteract>();
-        playerCollider = playerGameObject.GetComponent<Collider2D>();
+        playerInteract = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInteract>();
+        playerCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>();
     }
 
-
     private void RunEvent()
-    { 
-        interactableEvent.Invoke(); 
+    {
+        interactableEvent.Invoke();
+        if (!isRepeatable)
+        {
+            // Disable further interaction if it's not repeatable
+            hasInteracted = true;
+            playerInteract.ClearAction(RunEvent);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == playerCollider)
+        if (other == playerCollider && !hasInteracted)
         {
-            playerInteract.AddAction(RunEvent); // add a paramater of ID - this id tells the player which conversations to call from the dialog system
+            playerInteract.AddAction(RunEvent);
         }
     }
 

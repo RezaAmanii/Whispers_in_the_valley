@@ -29,15 +29,13 @@ public class VillagerAI : MonoBehaviour
     private Vector2 baseVector = Vector2.up;
     private float speed;
     private Action mode;
-
-
-
     private Animator animator;
     private Action lastMode;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         playerRb = playerGameObject.GetComponent<Rigidbody2D>();
         speed = moveSpeed;
         mode = Move;
@@ -59,6 +57,28 @@ public class VillagerAI : MonoBehaviour
         animator.SetBool("isInteracting", true);
         float target = Vector2.SignedAngle(baseVector, rb.position - points[currentDestination]);
         //Debug.Log("angle: " + angle + " target: " + target + " position: " + rb.position + " target: " + points[current]);
+
+        if (-45 < angle && angle <= 45 || 315 < angle && angle <= 405)
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 1);
+        }
+        else if (45 < angle && angle <= 135)
+        {
+            animator.SetFloat("Horizontal", 1);
+            animator.SetFloat("Vertical", 0);
+        }
+        else if ((135 < angle && angle <= 225))
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", -1);
+        }
+        else if (225 < angle && angle <= 315)
+        {
+            animator.SetFloat("Horizontal", -1);
+            animator.SetFloat("Vertical", 0);
+        }
+
 
         if (angle == target)
         {
@@ -118,26 +138,27 @@ public class VillagerAI : MonoBehaviour
         else
         {
             SetIdle();
+
         }
     }
 
-    private void MoveAnchor() 
+    private void MoveAnchor()
     {
         if (anchor != null)
         {
             anchor.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
-    
+
     //check if player is inside vision. if true then invoke onTrigger
     //onTrigger gets invoked on every FixedUpdate!
-    private void FindPlayer() 
+    private void FindPlayer()
     {
         float angleToPlayer = Vector2.SignedAngle(baseVector, rb.position - playerRb.position);
         float angleDifference = (angle - angleToPlayer) % 180;
         //Debug.Log("diff: " + angleDifference);
 
-        if ((math.abs(angleDifference) < visionAngle) && (Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).rigidbody == playerRb)) 
+        if ((math.abs(angleDifference) < visionAngle) && (Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).rigidbody == playerRb))
         {
             playerFoundEvent.Invoke();
             Debug.Log("player found!");
