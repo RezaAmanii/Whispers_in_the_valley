@@ -17,7 +17,6 @@ public class TestingDialogue : MonoBehaviour
     public TextMeshProUGUI dialogueTextComponent;
     public TextMeshProUGUI nameTextComponent;
     public dialoguePiece[] dialogueLines;
-    //public string [][] nameLines;
     public float textSpeed;
 
     [SerializeField] private int index;
@@ -25,11 +24,7 @@ public class TestingDialogue : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private bool isActive = false;
-    private VillagerAI npcMovement;
-    private Animator npcAnimation;
-
-    public PlayerInteract playerInteract; //new stuff here
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -41,12 +36,6 @@ public class TestingDialogue : MonoBehaviour
         {
             Debug.LogError("PlayerMovement component not found!");
         }
-        npcMovement = GetComponent<VillagerAI>();
-        if (npcMovement == null)
-        {
-            Debug.LogError("NPCMovement component not found!");
-        }
-        //StartDialogue(0);
     }
 
     // Update is called once per frame
