@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class LockedEvent : MonoBehaviour
 {
     public UnityEvent Event;
-    public GameObject RequiredObject;
+    public int RequiredId;
     private Inventory playerInventory;
 
     private void Start()
@@ -16,7 +16,7 @@ public class LockedEvent : MonoBehaviour
 
     public void run()
     {
-        if (playerInventory.Contains(RequiredObject))
+        if (playerInventory.Contains(RequiredId))
             Event.Invoke();
     }
 }

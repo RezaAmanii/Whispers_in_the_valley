@@ -7,6 +7,7 @@ public class PickUp : MonoBehaviour
 
     private Inventory inventory;
     public GameObject itemButton;
+    public int id;
 
     private void Start()
     {
@@ -23,9 +24,9 @@ public class PickUp : MonoBehaviour
                 if(inventory.isFull[i] == false)
                 {
                     inventory.isFull[i] = true;
-                    inventory.slots[i] = gameObject;
+                    inventory.id[i] = id;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
-                    gameObject.SetActive(false);
+                    Destroy(gameObject);
                     break;
                 }
             }
