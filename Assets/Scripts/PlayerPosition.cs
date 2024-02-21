@@ -15,7 +15,7 @@ public class PlayerPosition : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             transform.position = gameMaster.lastCheckPointPosition;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
