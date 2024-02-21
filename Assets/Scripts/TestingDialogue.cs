@@ -83,7 +83,7 @@ public class TestingDialogue : MonoBehaviour
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
         foreach (GameObject npc in npcs)
         {
-            //npc.GetComponent<VillagerAI>().SetIdle();
+            npc.GetComponent<VillagerAI>().SetIdle();
             npc.GetComponent<Animator>().enabled = false;
         }
 
@@ -132,7 +132,7 @@ public class TestingDialogue : MonoBehaviour
             GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
             foreach (GameObject npc in npcs)
             {
-                //npc.GetComponent<VillagerAI>().SetMoving();
+                npc.GetComponent<VillagerAI>().SetMoving();
                 npc.GetComponent<Animator>().enabled = true;
             }
 

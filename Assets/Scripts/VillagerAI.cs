@@ -31,10 +31,10 @@ public class VillagerAI : MonoBehaviour
     private float speed;
     private Action mode;
     private Animator animator;
+    private Action lastMode;
 
     void Start()
     {
-        //playerGameObject = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerRb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
@@ -114,7 +114,19 @@ public class VillagerAI : MonoBehaviour
             anchor.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
-    
+
+    public void SetIdle()
+    {
+        lastMode = mode;
+        mode = () => { };
+    }
+
+    public void SetMoving()
+    {
+        mode = lastMode;
+    }
+
+
     //check if player is inside vision. if true then invoke onTrigger
     //onTrigger gets invoked on every FixedUpdate!
     private void FindPlayer() 
