@@ -19,7 +19,7 @@ public class VillagerAI : MonoBehaviour
     public float visionAngle = 30;
     public float visionRange = 5;
     public GameObject anchor; //rotate this when the angle of the NPC changes (can be left null)
-    public GameObject playerGameObject; //use this to find player (needed to run script)
+    public bool searchForPlayer = false;
     public UnityEvent playerFoundEvent = new UnityEvent();
 
     private Rigidbody2D rb;
@@ -36,7 +36,7 @@ public class VillagerAI : MonoBehaviour
         playerGameObject = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        playerRb = playerGameObject.GetComponent<Rigidbody2D>();
+        playerRb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
         speed = moveSpeed;
         mode = Move;
         angle = Vector2.Angle(rb.position, points[currentDestination]);
@@ -46,7 +46,8 @@ public class VillagerAI : MonoBehaviour
     private void FixedUpdate()
     {
         mode.Invoke();
-        FindPlayer();
+        if (searchForPlayer) 
+            FindPlayer();
         MoveAnchor();
     }
 
@@ -120,11 +121,14 @@ public class VillagerAI : MonoBehaviour
         float angleToPlayer = Vector2.SignedAngle(baseVector, rb.position - playerRb.position);
         float angleDifference = (angle - angleToPlayer) % 180;
         //Debug.Log("diff: " + angleDifference);
+        //Debug.Log("raycast: " + Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).collider);
 
         if ((math.abs(angleDifference) < visionAngle) && (Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).rigidbody == playerRb)) 
         {
             playerFoundEvent.Invoke();
-            Debug.Log("player found!");
+
+            GameObject.FindWithTag("GM").GetComponent<GameMaster>().LoadCheckpoint();
+            //Debug.Log("player found!");
         }
     }
 

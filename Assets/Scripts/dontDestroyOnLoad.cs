@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class dontDestroyOnLoad : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
+        if (GameObject.FindGameObjectsWithTag(gameObject.tag).Length > 1)
+            Destroy(gameObject);
+
         DontDestroyOnLoad(this);
     }
 }
