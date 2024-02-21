@@ -22,6 +22,7 @@ public class VillagerAI : MonoBehaviour
     public bool searchForPlayer = false;
     public UnityEvent playerFoundEvent = new UnityEvent();
 
+
     private Rigidbody2D rb;
     private Rigidbody2D playerRb;
     private float angle = 0;
@@ -33,7 +34,7 @@ public class VillagerAI : MonoBehaviour
 
     void Start()
     {
-        playerGameObject = GameObject.FindGameObjectWithTag("Player");
+        //playerGameObject = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerRb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
