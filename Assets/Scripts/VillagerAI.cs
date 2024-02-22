@@ -59,22 +59,22 @@ public class VillagerAI : MonoBehaviour
         float target = Vector2.SignedAngle(baseVector, rb.position - points[currentDestination]);
         //Debug.Log("angle: " + angle + " target: " + target + " position: " + rb.position + " target: " + points[current]);
       
-        if (-45 < angle && angle <= 45 || 315 < angle && angle <= 405)
-        {
-            animator.SetFloat("Horizontal", 0);
-            animator.SetFloat("Vertical", 1);
-        }
-        else if (45 < angle && angle <= 135)
-        {
-            animator.SetFloat("Horizontal", 1);
-            animator.SetFloat("Vertical", 0);
-        }
-        else if ((135 < angle && angle <= 225))
+        if ((-45 < angle && angle <= 45) || (315 < angle || angle < -315))
         {
             animator.SetFloat("Horizontal", 0);
             animator.SetFloat("Vertical", -1);
         }
-        else if (225 < angle && angle <= 315)
+        else if ((45 < angle && angle <= 135) || (-315 < angle && angle <= -225))
+        {
+            animator.SetFloat("Horizontal", 1);
+            animator.SetFloat("Vertical", 0);
+        }
+        else if ((135 < angle && angle <= 225) || (-225 < angle && angle <= -135))
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 1);
+        }
+        else if ((225 < angle && angle <= 315) || (-135 < angle && angle <= -45))
         {
             animator.SetFloat("Horizontal", -1);
             animator.SetFloat("Vertical", 0);
