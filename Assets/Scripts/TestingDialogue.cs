@@ -85,6 +85,7 @@ public class TestingDialogue : MonoBehaviour
         {
             //npc.GetComponent<VillagerAI>().SetIdle();
             npc.GetComponent<Animator>().enabled = false;
+            npc.GetComponent<VillagerAI>().enabled = false;
         }
 
 
@@ -134,6 +135,7 @@ public class TestingDialogue : MonoBehaviour
             {
                 //npc.GetComponent<VillagerAI>().SetMoving();
                 npc.GetComponent<Animator>().enabled = true;
+                npc.GetComponent<VillagerAI>().enabled = true;
             }
 
         }
