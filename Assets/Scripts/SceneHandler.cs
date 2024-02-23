@@ -29,7 +29,7 @@ public class SceneHandler : MonoBehaviour
         }; 
        
     private Vector2[] positions = { 
-        new Vector2(-9,-20),    // WhisperingInn(0)
+        new Vector2(-0,20),    // WhisperingInn(0)
         new Vector2(-12, -12),  // Town @ WhisperingInn(1)
         new Vector2(-6, 1),     // Town @ Alex(2)
         new Vector2(-1, -17),   // Town @ Paul(3)
@@ -38,6 +38,8 @@ public class SceneHandler : MonoBehaviour
         new Vector2(10, 1),     // Town @ Alex(6)?
         new Vector2(24, -6),    // Town @ Julia(7)
         new Vector2(0, -4),     // Town @ Church(8)
+        new Vector2(0, 0),
+        new Vector2(6, 1)       //AlexsHouse(10)
         
          };
 
