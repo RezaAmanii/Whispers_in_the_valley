@@ -346,6 +346,14 @@ PrefabInstance:
       propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2042566376130805728, guid: 2dba26d7bf41de84fb2c7425ab3f70a7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2042566376130805728, guid: 2dba26d7bf41de84fb2c7425ab3f70a7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.38
+      objectReference: {fileID: 0}
     - target: {fileID: 4858740091850967302, guid: 2dba26d7bf41de84fb2c7425ab3f70a7, type: 3}
       propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 5

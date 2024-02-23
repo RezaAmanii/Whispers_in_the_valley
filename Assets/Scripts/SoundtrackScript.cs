@@ -14,16 +14,16 @@ public class SoundtrackScript : MonoBehaviour
     private void Awake()
     {
         // Ensure only one instance of SoundtrackScript exists
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //    return;
+        //}
 
         // Get or add an AudioSource component
         audioSource = GetComponent<AudioSource>();

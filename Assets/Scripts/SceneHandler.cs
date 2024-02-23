@@ -38,6 +38,8 @@ public class SceneHandler : MonoBehaviour
         new Vector2(10, 1),     // Town @ Alex(6)?
         new Vector2(24, -6),    // Town @ Julia(7)
         new Vector2(0, -4),     // Town @ Church(8)
+        new Vector2(0, -6),       // ChurchScene
+        new Vector2(5, 1)       // AlexHouse
         
          };
 
