@@ -3,11 +3,28 @@ using System.Collections.Generic;
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class SceneHandler : MonoBehaviour
 {
 
     private GameObject MC;
+    static string townsSceneString = "NightScene";
+
+    //0  TheWhisperingInn Interior
+    //1  TheWhisperingInn Outside
+    //2  AlexHouse Interior
+    //3  AlexHouse Outside
+    //4  MathewHouse Interior
+    //5  MathewHouse Outside
+    //6  SamuelsHouse Interior
+    //7  SamuelsHouse Outside
+    //8  PaulsHouse Interior
+    //9  PaulsHouse Outside
+    //10 TeresasHouse Interior
+    //11 AlexHouse Day
+
+    
 
 
     private string[] Scenes = { 

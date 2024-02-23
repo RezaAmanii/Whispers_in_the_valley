@@ -31,10 +31,10 @@ public class VillagerAI : MonoBehaviour
     private float speed;
     private Action mode;
     private Animator animator;
+    private Action lastMode;
 
     void Start()
     {
-        //playerGameObject = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         playerRb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
@@ -59,22 +59,22 @@ public class VillagerAI : MonoBehaviour
         float target = Vector2.SignedAngle(baseVector, rb.position - points[currentDestination]);
         //Debug.Log("angle: " + angle + " target: " + target + " position: " + rb.position + " target: " + points[current]);
       
-        if (-45 < angle && angle <= 45 || 315 < angle && angle <= 405)
-        {
-            animator.SetFloat("Horizontal", 0);
-            animator.SetFloat("Vertical", 1);
-        }
-        else if (45 < angle && angle <= 135)
-        {
-            animator.SetFloat("Horizontal", 1);
-            animator.SetFloat("Vertical", 0);
-        }
-        else if ((135 < angle && angle <= 225))
+        if ((-45 < angle && angle <= 45) || (315 < angle || angle < -315))
         {
             animator.SetFloat("Horizontal", 0);
             animator.SetFloat("Vertical", -1);
         }
-        else if (225 < angle && angle <= 315)
+        else if ((45 < angle && angle <= 135) || (-315 < angle && angle <= -225))
+        {
+            animator.SetFloat("Horizontal", 1);
+            animator.SetFloat("Vertical", 0);
+        }
+        else if ((135 < angle && angle <= 225) || (-225 < angle && angle <= -135))
+        {
+            animator.SetFloat("Horizontal", 0);
+            animator.SetFloat("Vertical", 1);
+        }
+        else if ((225 < angle && angle <= 315) || (-135 < angle && angle <= -45))
         {
             animator.SetFloat("Horizontal", -1);
             animator.SetFloat("Vertical", 0);
@@ -114,7 +114,19 @@ public class VillagerAI : MonoBehaviour
             anchor.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
-    
+
+    public void SetIdle()
+    {
+        lastMode = mode;
+        mode = () => { };
+    }
+
+    public void SetMoving()
+    {
+        mode = lastMode;
+    }
+
+
     //check if player is inside vision. if true then invoke onTrigger
     //onTrigger gets invoked on every FixedUpdate!
     private void FindPlayer() 
