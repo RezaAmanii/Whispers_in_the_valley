@@ -10,8 +10,8 @@ public class SceneHandler : MonoBehaviour
     private GameObject MC;
 
 
-    private string[] Scenes = { "TheWhisperingInn", "TownScene" };
-    private Vector2[] positions = { new Vector2(-9,-20), new Vector2(-12, -12) };
+    private string[] Scenes = { "TheWhisperingInn", "TownScene", "AlexHouseScene" };
+    private Vector2[] positions = { new Vector2(-9,-20), new Vector2(-12, -12), new Vector2(6, 1) };
 
 
     // Start is called before the first frame update
