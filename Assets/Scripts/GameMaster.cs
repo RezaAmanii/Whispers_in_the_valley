@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(SceneHandler))]
+
 public class GameMaster : MonoBehaviour
 {
+
+
     private static GameMaster instance;
-    private GameObject player;
+    private SceneHandler sceneHandler;
     public Vector2 lastCheckPointPosition;
+
+    public bool isNight = false;
 
     private void Awake()
     {
@@ -21,11 +27,13 @@ public class GameMaster : MonoBehaviour
             Destroy(gameObject);
         }
 
-        player = GameObject.FindWithTag("Player");
+        sceneHandler = GetComponent<SceneHandler>();
     }
     public void LoadCheckpoint()
     {
-        player.transform.position = lastCheckPointPosition;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneHandler.ChangeScene(2);
+        
+        //player.transform.position = lastCheckPointPosition;
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
