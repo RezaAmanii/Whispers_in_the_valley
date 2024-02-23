@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TownScene.unity
     guid: 93bc84e98cc7b1a42a957e55212f7045
   - enabled: 1
-    path: Assets/Scenes/AlexHouseScene.unity
+    path: Assets/Scenes/AlexsHouseScene.unity
     guid: 9349e4a21c776ce4ba67c92b87a28ed7
   - enabled: 1
     path: Assets/Scenes/TheWhisperingInn.unity
