@@ -29,38 +29,41 @@ public class SceneHandler : MonoBehaviour
 
     private string[] Scenes = { 
         "TheWhisperingInn", // WhisperingInn(0)
-        "TownScene",        // Town @ WhisperingInn(1)
-        "Townscene",        // Town @ Alex(2)
-        "TownScene",        // Town @ Paul(3)
-        "TownScene",        // Town @ Nadine(4)
-        "TownScene",        // Town @ Mathew(5)
-        "Townscene",        // Town @ Alex(6)?
-        "TownScene",        // Town @ Julia(7)
-        "TownScene",        // Town @ Church(8)
+        "NightTown",        // Town @ WhisperingInn(1)
+        "NightTown",        // Town @ Alex(2)
+        "NightTown",        // Town @ Paul(3)
+        "NightTown",        // Town @ Nadine(4)
+        "NightTown",        // Town @ Mathew(5)
+        "NightTown",        // Town @ Julia(6)?
+        "NightTown",        // Town @ Church(7)
+        "NightTown",        // Town @ Teresa(8)
         "ChurchScene",      // Church(9)
         "AlexsHouseScene",  // AlexsHouse(10)
         "JuliasHouseScene", // JuliasHouse(11)
         "MathewsHouseScene", // MathewsHouse(12)
         "PaulsHouseScene", // PaulsHouse(13)
-        "NadinesHouseScene" // NadinesHouse(14)
+        "NadinesHouseScene", // NadinesHouse(14)
+        "TeresasHouseScene" // TeresasHouse(15)
         }; 
        
     private Vector2[] positions = { 
-        new Vector2(-0,20),    // WhisperingInn(0)
-        new Vector2(-12, -12),  // Town @ WhisperingInn(1)
-        new Vector2(-6, 1),     // Town @ Alex(2)
-        new Vector2(-1, -17),   // Town @ Paul(3)
-        new Vector2(-15, -4),   // Town @ Nadine(4)
-        new Vector2(13, -16),   // Town @ Mathew(5)
-        new Vector2(10, 1),     // Town @ Alex(6)?
-        new Vector2(24, -6),    // Town @ Julia(7)
-        new Vector2(0, -4),     // Town @ Church(8)
-        new Vector2(0, 0),
-        new Vector2(6, 1),       //AlexsHouse(10)
-        new Vector2(6, 1),
-        new Vector2(6, 1),
-        new Vector2(6, 1),
-        new Vector2(6, 1)
+        new Vector2(10, 0.6f),    // WhisperingInn(0) OK
+        new Vector2(-12, -12),  // Town @ WhisperingInn(1) OK
+        new Vector2(-6, 1),     // Town @ Alex(2) OK
+        new Vector2(-1, -17),   // Town @ Paul(3) OK
+        new Vector2(-15, -4),   // Town @ Nadine(4) OK
+        new Vector2(13, -16),   // Town @ Mathew(5) OK
+        new Vector2(10, 1),     // Town @ Julia(6) OK
+        new Vector2(24, -6),    // Town @ Church(7)
+        new Vector2(0, -4),     // Town @ Teresa(8)
+        new Vector2(7.3f, 8.5f),      // Church (9)
+        new Vector2(5.5f, 0.5f),      // AlexsHouse(10) OK
+        new Vector2(5.5f, 0.5f),      // JuliasHouse(11) 
+        new Vector2(5.5f, 0.5f),      // MathewsHouse(12)
+        new Vector2(5.5f, 0.5f),      // PaulsHouse(13)
+        new Vector2(2.5f, 0.5f),      // NadinesHouse(14)
+        new Vector2(2.5f, 0.5f)       // TeresasHouse(15)
+
         
          };
 
@@ -73,7 +76,7 @@ public class SceneHandler : MonoBehaviour
 
     public void ChangeScene(int SceneIndex)
     {
-        MC.transform.position = positions[SceneIndex];
         SceneManager.LoadScene(Scenes[SceneIndex]);
+        MC.transform.position = positions[SceneIndex];
     }
 }
