@@ -9,7 +9,9 @@ public class SceneHandler : MonoBehaviour
 {
 
     private GameObject MC;
-    static string townsSceneString = "NightScene";
+    private GameMaster GMscript;
+    static string townsSceneString = "TownScene";
+    private bool isNight;
 
     //0  TheWhisperingInn Interior
     //1  TheWhisperingInn Outside
@@ -29,14 +31,14 @@ public class SceneHandler : MonoBehaviour
 
     private string[] Scenes = { 
         "TheWhisperingInn", // WhisperingInn(0)
-        "NightTown",        // Town @ WhisperingInn(1)
-        "NightTown",        // Town @ Alex(2)
-        "NightTown",        // Town @ Paul(3)
-        "NightTown",        // Town @ Nadine(4)
-        "NightTown",        // Town @ Mathew(5)
-        "NightTown",        // Town @ Julia(6)?
-        "NightTown",        // Town @ Church(7)
-        "NightTown",        // Town @ Teresa(8)
+        townsSceneString,        // Town @ WhisperingInn(1)
+        townsSceneString,        // Town @ Alex(2)
+        townsSceneString,        // Town @ Paul(3)
+        townsSceneString,        // Town @ Nadine(4)
+        townsSceneString,        // Town @ Mathew(5)
+        townsSceneString,        // Town @ Julia(6)?
+        townsSceneString,        // Town @ Church(7)
+        townsSceneString,        // Town @ Teresa(8)
         "ChurchScene",      // Church(9)
         "AlexsHouseScene",  // AlexsHouse(10)
         "JuliasHouseScene", // JuliasHouse(11)
@@ -71,12 +73,35 @@ public class SceneHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isNight = false;
         MC = GameObject.FindGameObjectWithTag("Player");
+        GMscript = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        townsSceneString = "TownScene";
     }
 
     public void ChangeScene(int SceneIndex)
     {
+        // If isNight is false, update the value from GMscript to make sure it is correct.
+        if(!GMscript.GetIsNight()){
+            UpdateIsNight();
+
+            if(!GMscript.GetIsNight()){
+                townsSceneString = "TownScene";
+            }else{
+                townsSceneString = "NightTown";
+            }
+        }else if(GMscript.GetIsNight()){
+            townsSceneString = "NightTown";
+        }
+
+        
+
         SceneManager.LoadScene(Scenes[SceneIndex]);
         MC.transform.position = positions[SceneIndex];
+    }
+
+    private void UpdateIsNight(){
+        GMscript = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        this.isNight = GMscript.GetIsNight();
     }
 }
