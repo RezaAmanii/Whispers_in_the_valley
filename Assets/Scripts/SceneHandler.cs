@@ -80,16 +80,12 @@ public class SceneHandler : MonoBehaviour
     public void ChangeScene(int SceneIndex)
     {
         // If isNight is false, update the value from GMscript to make sure it is correct.
-        if(GMscript.GetIsNight() == false){
-
+    
             if(GMscript.GetIsNight() == false){
                 townsSceneString = "TownScene";
             }else{
                 townsSceneString = "NightTown";
             }
-        }else if(GMscript.GetIsNight() == true){
-            townsSceneString = "NightTown";
-        }
 
         SceneManager.LoadScene(Scenes[SceneIndex]);
         MC.transform.position = positions[SceneIndex];
