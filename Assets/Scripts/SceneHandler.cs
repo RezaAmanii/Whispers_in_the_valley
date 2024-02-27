@@ -11,7 +11,7 @@ public class SceneHandler : MonoBehaviour
     private GameObject MC;
     private GameMaster GMscript;
     static string townsSceneString = "TownScene";
-    private bool isNight;
+    public string town = townsSceneString; // For testing purposes only
 
     //0  TheWhisperingInn Interior
     //1  TheWhisperingInn Outside
@@ -73,35 +73,27 @@ public class SceneHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        isNight = false;
         MC = GameObject.FindGameObjectWithTag("Player");
         GMscript = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        townsSceneString = "TownScene";
     }
 
     public void ChangeScene(int SceneIndex)
     {
         // If isNight is false, update the value from GMscript to make sure it is correct.
-        if(!GMscript.GetIsNight()){
-            UpdateIsNight();
+        if(GMscript.GetIsNight() == false){
 
-            if(!GMscript.GetIsNight()){
+            if(GMscript.GetIsNight() == false){
                 townsSceneString = "TownScene";
             }else{
                 townsSceneString = "NightTown";
             }
-        }else if(GMscript.GetIsNight()){
+        }else if(GMscript.GetIsNight() == true){
             townsSceneString = "NightTown";
         }
-
-        
 
         SceneManager.LoadScene(Scenes[SceneIndex]);
         MC.transform.position = positions[SceneIndex];
     }
 
-    private void UpdateIsNight(){
-        GMscript = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        this.isNight = GMscript.GetIsNight();
-    }
+    
 }
