@@ -104,4 +104,10 @@ public class MenuManager : MonoBehaviour
         
         OpenMainMenu();
     }
+
+    public void QuiteGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit!");
+    }
 }
