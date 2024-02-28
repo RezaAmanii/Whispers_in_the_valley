@@ -140,7 +140,7 @@ public class VillagerAI : MonoBehaviour
         {
             playerFoundEvent.Invoke();
 
-            GameObject.FindWithTag("GM").GetComponent<GameMaster>().LoadCheckpoint();
+            //GameObject.FindWithTag("GM").GetComponent<GameMaster>().LoadCheckpoint();
             //Debug.Log("player found!");
         }
     }
