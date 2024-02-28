@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
-
+    
 
     private static GameMaster instance;
     private SceneHandler sceneHandler;
@@ -20,6 +20,11 @@ public class GameMaster : MonoBehaviour
     public HashSet<int> interactedIDs = new HashSet<int>();
 
 
+
+    public bool HasSpoken()
+    {
+        return interactedIDs.Count >= 5;
+    }
 
     private void Awake()
     {
