@@ -24,6 +24,8 @@ public class TestingDialogue : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private bool isActive = false;
+
+    private GameMaster GMscript;
     
     // Start is called before the first frame update
     void Start()
@@ -32,7 +34,7 @@ public class TestingDialogue : MonoBehaviour
         dialogueTextComponent.text = string.Empty;
         nameTextComponent.text = string.Empty;
         playerMovement = FindObjectOfType<PlayerMovement>();
-        
+        GMscript = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     // Update is called once per frame
@@ -57,6 +59,11 @@ public class TestingDialogue : MonoBehaviour
 
     public void StartDialogue(int index)
     {
+        // Testar att trigga natten med sängen.
+        if(index == 7){
+            GMscript.SetIsNight();
+        }
+            
         if (isActive) { return; }
         isActive = true; 
 

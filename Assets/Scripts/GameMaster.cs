@@ -36,4 +36,11 @@ public class GameMaster : MonoBehaviour
         //player.transform.position = lastCheckPointPosition;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void SetIsNight(){
+        isNight = true;
+    }
+    public bool GetIsNight(){
+        return isNight;
+    }
 }
