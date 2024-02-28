@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,6 +15,11 @@ public class GameMaster : MonoBehaviour
     public Vector2 lastCheckPointPosition;
 
     public bool isNight = false;
+
+    [DoNotSerialize]
+    public HashSet<int> interactedIDs = new HashSet<int>();
+
+
 
     private void Awake()
     {
