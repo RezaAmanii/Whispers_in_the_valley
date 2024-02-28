@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 274841234635852581}
   - component: {fileID: 4941331746303872353}
   - component: {fileID: 9180712616231996688}
+  - component: {fileID: 509576070020748842}
   m_Layer: 0
   m_Name: Fountain
   m_TagString: Untagged
@@ -217,7 +218,7 @@ Tilemap:
       - {fileID: 1887919568, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 906973830, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 970548991, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -2, z: 0}
@@ -227,7 +228,7 @@ Tilemap:
       - {fileID: -1858971710, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1154769045, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1922791831, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -2, z: 0}
@@ -237,7 +238,7 @@ Tilemap:
       - {fileID: -1695640639, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1255074874, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 515063499, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -1, z: 0}
@@ -247,7 +248,7 @@ Tilemap:
       - {fileID: -150508239, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1898031231, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 410596066, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -1, z: 0}
@@ -257,7 +258,7 @@ Tilemap:
       - {fileID: 691084131, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: -271699619, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: -1761485372, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -1, z: 0}
@@ -267,7 +268,7 @@ Tilemap:
       - {fileID: 1653063055, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 224486568, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 687676492, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: 0, z: 0}
@@ -277,7 +278,7 @@ Tilemap:
       - {fileID: -1193616300, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: -246117082, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: -1368896532, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: 0, z: 0}
@@ -287,7 +288,7 @@ Tilemap:
       - {fileID: 159470701, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 773049471, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 589074634, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: 0, z: 0}
@@ -297,7 +298,7 @@ Tilemap:
       - {fileID: 1274355163, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1108644320, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
       - {fileID: 1002333149, guid: c36614bbfbf97de41aad1787d4b0e3b0, type: 3}
-      m_AnimationSpeed: 1
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -433,3 +434,39 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &509576070020748842
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3890024073546990378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0

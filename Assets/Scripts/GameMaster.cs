@@ -37,7 +37,7 @@ public class GameMaster : MonoBehaviour
     }
     public void LoadCheckpoint()
     {
-        sceneHandler.ChangeScene(2);
+        sceneHandler.ChangeScene(10);
         
         //player.transform.position = lastCheckPointPosition;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

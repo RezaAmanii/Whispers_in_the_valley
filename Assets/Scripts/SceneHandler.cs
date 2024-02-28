@@ -81,14 +81,17 @@ public class SceneHandler : MonoBehaviour
     {
         // If isNight is false, update the value from GMscript to make sure it is correct.
     
-            if(GMscript.GetIsNight() == false){
-                townsSceneString = "TownScene";
+            if(GMscript.GetIsNight() && Scenes[SceneIndex] == "TownScene"){
+
+                SceneManager.LoadScene("NightTown");
+                MC.transform.position = positions[SceneIndex];
             }else{
-                townsSceneString = "NightTown";
+
+                SceneManager.LoadScene(Scenes[SceneIndex]);
+                MC.transform.position = positions[SceneIndex];
             }
 
-        SceneManager.LoadScene(Scenes[SceneIndex]);
-        MC.transform.position = positions[SceneIndex];
+        
     }
 
     
