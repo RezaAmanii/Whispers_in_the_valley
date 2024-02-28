@@ -18,6 +18,7 @@ public class GameMaster : MonoBehaviour
 
     [DoNotSerialize]
     public HashSet<int> interactedIDs = new HashSet<int>();
+    public HashSet<int> interactedPickUps = new HashSet<int>();
 
 
 
