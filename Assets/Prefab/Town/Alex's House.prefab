@@ -519,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  town: TownScene
 --- !u!50 &79323424256093924
 Rigidbody2D:
   serializedVersion: 4
