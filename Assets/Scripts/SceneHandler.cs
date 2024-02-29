@@ -54,9 +54,9 @@ public class SceneHandler : MonoBehaviour
         new Vector2(-1, -17),   // Town @ Paul(3) OK
         new Vector2(-15, -4),   // Town @ Nadine(4) OK
         new Vector2(13, -16),   // Town @ Mathew(5) OK
-        new Vector2(10, 1),     // Town @ Julia(6) OK
+        new Vector2(1.7f, 0),     // Town @ Julia(6) OK
         new Vector2(24, -6),    // Town @ Church(7)
-        new Vector2(0, -4),     // Town @ Teresa(8)
+        new Vector2(14.7f, -1),     // Town @ Teresa(8)
         new Vector2(7.3f, 8.5f),      // Church (9)
         new Vector2(5.5f, 0.5f),      // AlexsHouse(10) OK
         new Vector2(5.5f, 0.5f),      // JuliasHouse(11) 
