@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  town: TownScene
 --- !u!50 &5350225514792826942
 Rigidbody2D:
   serializedVersion: 4
@@ -813,7 +814,7 @@ TilemapRenderer:
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
-  m_DetectChunkCullingBounds: 1
+  m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!19719996 &6648285733697459854
 TilemapCollider2D:

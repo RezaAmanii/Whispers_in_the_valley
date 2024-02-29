@@ -79,27 +79,7 @@ Tilemap:
   - first: {x: 3, y: 0, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 4, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 10
-      m_TileSpriteIndex: 10
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 5, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 9
+      m_TileIndex: 2
       m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -139,27 +119,7 @@ Tilemap:
   - first: {x: 3, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 4, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 5, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 5
+      m_TileIndex: 9
       m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -199,27 +159,7 @@ Tilemap:
   - first: {x: 3, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 4, y: 2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 5, y: 2, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
+      m_TileIndex: 5
       m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
@@ -228,46 +168,46 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: cad0dca59fa9b7d49bfef9b9328836cf, type: 2}
-  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: e53d7c2457986eb4aa865fc4dec9ce90, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: e3a367b7ec9b8204888cccebc3895fd2, type: 2}
-  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: d5d9f4b03f626cb478cde19e112c148a, type: 2}
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5f6ef638d7bb8bc4380c2451ececb7c4, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: d5544b5d12dcf8844bd44efe585ee4ae, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 4c37e072a97470e43895c460758f60e7, type: 2}
-  - m_RefCount: 3
+    m_Data: {fileID: 11400000, guid: e3a367b7ec9b8204888cccebc3895fd2, type: 2}
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ba9b88630acd72246aa5bad15f0dcc87, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 771cc1f7703d95c468484f50d85df491, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 1394a48c3a87fa04bb283a467be50ab1, type: 2}
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: d5d9f4b03f626cb478cde19e112c148a, type: 2}
-  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: 4c37e072a97470e43895c460758f60e7, type: 2}
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: b6c553b12d7bd7e48919dbc36f7588de, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: da082c2487c8e6040b6f35234cbaf2cd, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e7df4117832d1ed4baa115b2daea493b, type: 2}
   m_TileSpriteArray:
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 384536f19e3decb4d8fcb24ab9894de1, type: 3}
-  - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: e6ba195e7d1e8ca49af31f0105aa547f, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 99d71f811df9b6c428be3d9e61980155, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 7f5d8c79b0c0195479b3598d629424a1, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 0d435836ad126e844ac7ce172d5eee06, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 9d487b552923672468409e92e1e51860, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 05700250c1d222247b6652a56fac8799, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 3ff598c51365b8b44b9f050d0ddd61f0, type: 3}
@@ -275,14 +215,14 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 1d628336a5bb40d42948a5755ef3e0d6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 972e52ada8005404686c20c23c874565, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: b3f2e438c3849dc4a82ae95e2cd7c61a, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: d6362b55220c30b4793598993f49a305, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: f485813e5e641674c9030cbd84aedd90, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 18
+  - m_RefCount: 12
     m_Data:
       e00: 1
       e01: 0
@@ -301,7 +241,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 18
+  - m_RefCount: 12
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -369,12 +309,12 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 4.57, y: 2.86, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
-  m_DetectChunkCullingBounds: 1
+  m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!19719996 &8659933060418350502
 TilemapCollider2D:
@@ -478,18 +418,18 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 8659933060418350502}
     m_ColliderPaths:
-    - - X: 60000000
+    - - X: 40000000
         Y: 30000000
       - X: 0
         Y: 30000000
       - X: 0
         Y: 0
-      - X: 60000000
+      - X: 40000000
         Y: 0
   m_CompositePaths:
     m_Paths:
-    - - {x: 5.999971, y: 0}
-      - {x: 5.999971, y: 3}
+    - - {x: 3.999971, y: 0}
+      - {x: 3.999971, y: 3}
       - {x: 0, y: 2.999971}
       - {x: 0.000029300001, y: 0}
   m_VertexDistance: 0.0005
@@ -509,6 +449,7 @@ GameObject:
   - component: {fileID: 7321046119125076167}
   - component: {fileID: 5236504265239963329}
   - component: {fileID: 4280632907194617512}
+  - component: {fileID: 4802975281096816476}
   m_Layer: 0
   m_Name: TeresasDoor
   m_TagString: Untagged
@@ -630,10 +571,10 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5925534253159140200}
-        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 3
+      - m_Target: {fileID: 4802975281096816476}
+        m_TargetAssemblyTypeName: LockedEvent, Assembly-CSharp
+        m_MethodName: run
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -642,3 +583,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4802975281096816476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5925534253159140200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04481dbfa5891e409b67c525c345aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8764701973565231318}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  RequiredId: 15

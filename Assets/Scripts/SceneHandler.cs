@@ -11,9 +11,8 @@ public class SceneHandler : MonoBehaviour
     private GameObject MC;
     private GameMaster GMscript;
     static string townsSceneString = "TownScene";
-    public string town = townsSceneString; // For testing purposes only
 
-    //0  TheWhisperingInn Interior
+    //0  TheWhisperingInn Interior 
     //1  TheWhisperingInn Outside
     //2  AlexHouse Interior
     //3  AlexHouse Outside

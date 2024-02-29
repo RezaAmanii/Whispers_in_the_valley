@@ -309,12 +309,12 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 4.57, y: 2.86, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
-  m_DetectChunkCullingBounds: 1
+  m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!19719996 &3668669901993553929
 TilemapCollider2D:
@@ -449,6 +449,7 @@ GameObject:
   - component: {fileID: 1205770127813716446}
   - component: {fileID: 2949714178239599976}
   - component: {fileID: 8691566503600922811}
+  - component: {fileID: 2027664117356544231}
   m_Layer: 0
   m_Name: NadinesDoor
   m_TagString: Untagged
@@ -483,7 +484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  town: TownScene
 --- !u!50 &1205770127813716446
 Rigidbody2D:
   serializedVersion: 4
@@ -571,6 +571,33 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2027664117356544231}
+        m_TargetAssemblyTypeName: LockedEvent, Assembly-CSharp
+        m_MethodName: run
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2027664117356544231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8895986427032434352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04481dbfa5891e409b67c525c345aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 6773543523221851124}
         m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
         m_MethodName: ChangeScene
@@ -583,3 +610,4 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RequiredId: 14

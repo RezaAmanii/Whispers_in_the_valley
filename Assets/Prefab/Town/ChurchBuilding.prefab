@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2407440183410395894}
   - component: {fileID: 790254721770833945}
   - component: {fileID: 7144796859071407691}
+  - component: {fileID: 308225463521230878}
   m_Layer: 0
   m_Name: ChurchDoor
   m_TagString: Untagged
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  town: TownScene
 --- !u!50 &2407440183410395894
 Rigidbody2D:
   serializedVersion: 4
@@ -135,6 +135,33 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 308225463521230878}
+        m_TargetAssemblyTypeName: LockedEvent, Assembly-CSharp
+        m_MethodName: run
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &308225463521230878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321760185358929112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04481dbfa5891e409b67c525c345aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 8093424718345978936}
         m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
         m_MethodName: ChangeScene
@@ -147,6 +174,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RequiredId: 9
 --- !u!1 &1772925242857739629
 GameObject:
   m_ObjectHideFlags: 0

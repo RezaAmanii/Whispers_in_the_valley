@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6333802490397778292}
   - component: {fileID: 5392137659216958336}
   - component: {fileID: 4313550852868089579}
+  - component: {fileID: 5400674187947676765}
   m_Layer: 0
   m_Name: MathewsDoor
   m_TagString: Untagged
@@ -47,7 +48,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  town: TownScene
 --- !u!50 &6333802490397778292
 Rigidbody2D:
   serializedVersion: 4
@@ -135,6 +135,33 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 5400674187947676765}
+        m_TargetAssemblyTypeName: LockedEvent, Assembly-CSharp
+        m_MethodName: run
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5400674187947676765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2544616087631838265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04481dbfa5891e409b67c525c345aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 849928588533203768}
         m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
         m_MethodName: ChangeScene
@@ -147,6 +174,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  RequiredId: 12
 --- !u!1 &4914168719318636667
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,12 +480,12 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 4.57, y: 2.86, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
   m_Mode: 0
-  m_DetectChunkCullingBounds: 1
+  m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!19719996 &2744269622252056173
 TilemapCollider2D:
