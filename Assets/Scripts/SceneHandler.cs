@@ -42,7 +42,9 @@ public class SceneHandler : MonoBehaviour
         "JuliasHouseScene", // JuliasHouse(11)
         "MathewsHouseScene", // MathewsHouse(12)
         "PaulsHouseScene", // PaulsHouse(13)
-        "NadinesHouseScene" // NadinesHouse(14)
+        "NadinesHouseScene", // NadinesHouse(14)
+        "ChurchBasement",   // ChurchBasement (15)
+        "CultLeaderChamber" // CultLeaderChamber (16)
         }; 
        
     private Vector2[] positions = { 
