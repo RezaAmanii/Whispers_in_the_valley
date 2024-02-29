@@ -12,6 +12,14 @@ public class PickUp : MonoBehaviour
     private void Start()
     {
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        /*for(int i = 0; i < inventory.slots.Length; i++)
+        {
+            if(inventory.id[i] == id)
+            {
+                gameObject.SetActive(false);
+                break;
+            }
+        }*/
 
     }
 

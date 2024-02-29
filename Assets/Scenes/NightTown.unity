@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 1702644356}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: visionRange
@@ -205,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.size
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[0].x
@@ -213,7 +213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[0].y
-      value: -12.6
+      value: -15.8
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[1].x
@@ -221,11 +221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[1].y
-      value: -17
+      value: -12.6
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[2].x
-      value: -1.3
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[2].y
@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[3].x
-      value: -4.4
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[3].y
@@ -245,7 +245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[4].y
-      value: -12.6
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[5].x
@@ -253,14 +253,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[5].y
-      value: -17
+      value: -12.6
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[6].x
-      value: 0.8
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: points.Array.data[6].y
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
+      propertyPath: points.Array.data[7].x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
+      propertyPath: points.Array.data[7].y
       value: -17
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
@@ -326,6 +334,10 @@ PrefabInstance:
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: VillagerAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
+      propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5633560379457245568, guid: 33880ee9632db49679284a23c6b7cc45, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -408,11 +420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2018010280780836162, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 2018010280780836162, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2018010280780836162, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -456,7 +468,7 @@ PrefabInstance:
       objectReference: {fileID: 1120772059}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: visionRange
@@ -468,39 +480,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
-      propertyPath: points.Array.data[0].x
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
-      propertyPath: points.Array.data[0].y
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
+      propertyPath: points.Array.data[0].x
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
+      propertyPath: points.Array.data[0].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[1].x
-      value: 13
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[1].y
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[2].x
-      value: 8
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[2].y
-      value: 1
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[3].x
-      value: 13
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: points.Array.data[3].y
-      value: 1
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
+      propertyPath: points.Array.data[4].x
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
+      propertyPath: points.Array.data[4].y
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.size
@@ -565,6 +585,10 @@ PrefabInstance:
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: VillagerAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
+      propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5234046383294007500, guid: d879c44a3e9094e2e9f0c60b0cbfd0fd, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -718,11 +742,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2988389449375113205, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.3
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 2988389449375113205, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 2988389449375113205, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -770,7 +794,7 @@ PrefabInstance:
       objectReference: {fileID: 1633111418}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: visionRange
@@ -782,55 +806,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[0].x
-      value: -9.3
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[0].y
-      value: 4.2
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[1].x
-      value: -9.3
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[1].y
-      value: 1
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[2].x
-      value: -6.3
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[2].y
-      value: 1
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[3].x
-      value: -4.2
+      value: 14.66
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[3].y
-      value: 1
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[4].x
-      value: -9.3
+      value: 16.75
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[4].y
-      value: 1
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[5].x
-      value: -9.3
+      value: 12.54
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: points.Array.data[5].y
-      value: 1
+      value: -0.92
       objectReference: {fileID: 0}
     - target: {fileID: 7009878856578776919, guid: d9bbfbaa025dd4eed9a975fc6be9ea2c, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1059,7 +1083,7 @@ PrefabInstance:
       objectReference: {fileID: 702193232}
     - target: {fileID: 4039023491713818299, guid: 5e10a2e6864e34ac080abe5cafac590e, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4039023491713818299, guid: 5e10a2e6864e34ac080abe5cafac590e, type: 3}
       propertyPath: visionRange
@@ -1148,6 +1172,10 @@ PrefabInstance:
     - target: {fileID: 4039023491713818299, guid: 5e10a2e6864e34ac080abe5cafac590e, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: VillagerAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4039023491713818299, guid: 5e10a2e6864e34ac080abe5cafac590e, type: 3}
+      propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4039023491713818299, guid: 5e10a2e6864e34ac080abe5cafac590e, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1583,7 +1611,7 @@ PrefabInstance:
       objectReference: {fileID: 1058560299}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: visionRange
@@ -1603,11 +1631,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[0].y
-      value: -3.8
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[1].x
-      value: -15.3
+      value: -17.3
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[1].y
@@ -1615,7 +1643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[2].x
-      value: -12.2
+      value: -15.3
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[2].y
@@ -1627,7 +1655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[3].y
-      value: -2.6
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[4].x
@@ -1635,11 +1663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[4].y
-      value: -3.8
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[5].x
-      value: -17.3
+      value: -12.2
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[5].y
@@ -1651,15 +1679,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[6].y
-      value: -2.6
+      value: -3.8
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[7].x
-      value: -12.2
+      value: -17.3
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[7].y
-      value: -3.8
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: points.Array.data[8].x
@@ -1732,6 +1760,10 @@ PrefabInstance:
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: VillagerAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
+      propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1004665138834438470, guid: dabde0e6f9193497cb52d4847ac26d54, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2253,7 +2285,7 @@ PrefabInstance:
       objectReference: {fileID: 1284377030}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: visionAngle
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: visionRange
@@ -2273,15 +2305,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[0].y
-      value: -11.5
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[1].x
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
+      propertyPath: points.Array.data[1].y
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[2].x
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[2].y
@@ -2289,7 +2325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[3].x
-      value: 10.5
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[3].y
@@ -2301,7 +2337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[4].y
-      value: -11.5
+      value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[5].x
@@ -2309,14 +2345,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[5].y
-      value: -16
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[6].x
-      value: 16
+      value: 10.5
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: points.Array.data[6].y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
+      propertyPath: points.Array.data[7].x
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
+      propertyPath: points.Array.data[7].y
       value: -16
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
@@ -2382,6 +2426,10 @@ PrefabInstance:
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: VillagerAI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
+      propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8413999168350251301, guid: 8d3f90c74bec44a378f72b7fe133f1b7, type: 3}
       propertyPath: playerFoundEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
