@@ -21,7 +21,7 @@ public class GameMaster : MonoBehaviour
 
 
 
-    public bool HasSpoken()
+    public bool GetHasSpoken()
     {
         return interactedIDs.Count >= 5;
     }
