@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChurchScene.unity
     guid: 7fdcd8e25ffd7d441b7191f6ab3d50b3
+  - enabled: 1
+    path: Assets/Scenes/NightTown.unity
+    guid: 24864810e7267634d959dff59237985b
   m_configObjects: {}
