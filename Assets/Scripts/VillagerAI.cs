@@ -16,8 +16,8 @@ public class VillagerAI : MonoBehaviour
     public float moveSpeed = 1;
     public float turnSpeed = 100;
     public float waitTime = 1;
-    public float visionAngle = 30;
-    public float visionRange = 5;
+    public float visionAngle = 20;
+    public float visionRange = 2.6f;
     public GameObject anchor; //rotate this when the angle of the NPC changes (can be left null)
     public bool searchForPlayer = false;
     public UnityEvent playerFoundEvent = new UnityEvent();

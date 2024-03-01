@@ -22,9 +22,9 @@ public class GameMaster : MonoBehaviour
 
 
 
-    public bool HasSpoken()
+    public bool GetHasSpoken()
     {
-        return interactedIDs.Count >= 5;
+        return interactedIDs.Count >= 0; // >=4
     }
 
     private void Awake()
@@ -43,7 +43,7 @@ public class GameMaster : MonoBehaviour
     }
     public void LoadCheckpoint()
     {
-        sceneHandler.ChangeScene(2);
+        sceneHandler.ChangeScene(10);
         
         //player.transform.position = lastCheckPointPosition;
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

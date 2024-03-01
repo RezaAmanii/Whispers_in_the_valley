@@ -60,7 +60,7 @@ public class TestingDialogue : MonoBehaviour
     public void StartDialogue(int index)
     {
         // Testar att trigga natten med sängen.
-        if(index == 7){
+        if(index == 7 && GMscript.GetHasSpoken()){
             GMscript.SetIsNight();
         }
             
