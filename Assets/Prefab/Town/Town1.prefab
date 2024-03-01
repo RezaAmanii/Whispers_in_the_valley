@@ -2713,6 +2713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fountain
       objectReference: {fileID: 0}
+    - target: {fileID: 3177113541532886719, guid: d67989f5a13a0524c8489717979a893e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3988775321774292189, guid: d67989f5a13a0524c8489717979a893e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.4097004
