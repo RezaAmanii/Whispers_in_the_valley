@@ -18,6 +18,8 @@ public class TestingDialogue : MonoBehaviour
     public TextMeshProUGUI nameTextComponent;
     public dialoguePiece[] dialogueLines;
     public float textSpeed;
+    public AudioClip spacePressSound;
+    public AudioSource audioSource; 
 
     [SerializeField] private int index;
     private int currentID;
@@ -41,6 +43,7 @@ public class TestingDialogue : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            PlaySpacePressSound();
             if (dialogueTextComponent.text == dialogueLines[currentID].speech[index])
             {
                 NextLine();
@@ -50,8 +53,15 @@ public class TestingDialogue : MonoBehaviour
             {
                 StopAllCoroutines();
                 dialogueTextComponent.text = dialogueLines[currentID].speech[index];
-                //nameTextComponent.text = dialogueLines[currentID].name;
             }
+        }
+    }
+
+    void PlaySpacePressSound()
+    {
+        if (audioSource != null && spacePressSound != null)
+        {
+            audioSource.PlayOneShot(spacePressSound);
         }
     }
 
@@ -61,7 +71,6 @@ public class TestingDialogue : MonoBehaviour
         isActive = true; 
 
         gameObject.SetActive(true);
-        //this.GetComponent<PlayerMovement>().enabled = false;
         
         if (playerMovement != null)
         {
@@ -73,13 +82,7 @@ public class TestingDialogue : MonoBehaviour
         currentID = index;
         nameTextComponent.text = dialogueLines[currentID].name;
         StartCoroutine(TypeLine());
-        // NEW STUFF HERE
 
-        //if (npcMovement != null)
-        //{
-        //    npcMovement.canMove = false;
-        //}
-        //GameObject.Find("NPC(Teresa)").GetComponent<VillagerAI>().enabled = false;
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
         foreach (GameObject npc in npcs)
         {
@@ -117,19 +120,13 @@ public class TestingDialogue : MonoBehaviour
             index = 0;
             dialogueTextComponent.text = string.Empty;
             gameObject.SetActive(false);
-            //playerInteract.FinishInteraction(); //stuff here
 
-            //this.GetComponent<PlayerMovement>().enabled = true; 
             if (playerMovement != null)
             {
                 playerMovement.enabled = true;
 
             }
-            //if (npcMovement != null)
-            //{
-            //    npcMovement.canMove = true;
-            //}
-            //GameObject.Find("NPC(Teresa)").GetComponent<VillagerAI>().enabled = true;
+
             GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
             foreach (GameObject npc in npcs)
             {

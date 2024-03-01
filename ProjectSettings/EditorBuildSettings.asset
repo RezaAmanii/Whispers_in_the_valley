@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChurchScene.unity
     guid: 7fdcd8e25ffd7d441b7191f6ab3d50b3
+  - enabled: 1
+    path: Assets/Scenes/ChurchBasement.unity
+    guid: b168333f7bc18c045a009f215b23f866
+  - enabled: 1
+    path: Assets/Scenes/CultLeaderChamber.unity
+    guid: 081b32f152f548444b220ebb00034e4e
   m_configObjects: {}

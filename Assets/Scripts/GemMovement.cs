@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StoneMovement : MonoBehaviour
+public class GemMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float leftBound = -1f; // Define the left bound for the stone movement
+    public float rightBound = 1f; // Define the right bound for the stone movement
+
+    private Vector3 initialPosition; // Store the initial position of the stone
+
+    private void Start()
     {
-        
+        initialPosition = transform.position; // Store the initial position
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        // Calculate the position where the stone can be moved to
+        float targetX = Mathf.Clamp(transform.position.x, initialPosition.x + leftBound, initialPosition.x + rightBound);
+
+        // Update the position of the stone
+        transform.position = new Vector3(targetX, transform.position.y, transform.position.z);
     }
 }

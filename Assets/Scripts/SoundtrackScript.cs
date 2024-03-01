@@ -8,6 +8,8 @@ public class SoundtrackScript : MonoBehaviour
     public AudioClip firstSoundtrack;
     public AudioClip secondSoundtrack;
 
+    public float volume = 1.0f; 
+
     private static SoundtrackScript instance;
     private AudioSource audioSource;
 
@@ -47,12 +49,14 @@ public class SoundtrackScript : MonoBehaviour
     private void PlayFirstSoundtrack()
     {
         audioSource.clip = firstSoundtrack;
+        audioSource.volume = volume;
         audioSource.Play();
     }
 
     private void PlaySecondSoundtrack()
     {
         audioSource.clip = secondSoundtrack;
+        audioSource.volume = volume;
         audioSource.Play();
     }
 
