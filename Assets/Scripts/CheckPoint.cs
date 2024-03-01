@@ -13,6 +13,7 @@ public class CheckPoint : MonoBehaviour
     private void Start()
     {
         gameMaster = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        gameObject.SetActive(true);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -23,6 +24,7 @@ public class CheckPoint : MonoBehaviour
             Instantiate(popupTextPrefab, transform.position, Quaternion.identity);
             gameMaster.lastCheckPointPosition = transform.position;
         }
+        gameObject.SetActive(false);
         
     }
 }
