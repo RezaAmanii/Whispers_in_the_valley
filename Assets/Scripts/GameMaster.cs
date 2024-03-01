@@ -23,7 +23,7 @@ public class GameMaster : MonoBehaviour
 
     public bool GetHasSpoken()
     {
-        return interactedIDs.Count >= 4;
+        return interactedIDs.Count >= 0; // >=4
     }
 
     private void Awake()

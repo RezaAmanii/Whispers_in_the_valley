@@ -132,7 +132,7 @@ public class VillagerAI : MonoBehaviour
     private void FindPlayer() 
     {
         float angleToPlayer = Vector2.SignedAngle(baseVector, rb.position - playerRb.position);
-        float angleDifference = (angle - angleToPlayer) % 180;
+        float angleDifference = (angle - angleToPlayer) % 360;
         //Debug.Log("diff: " + angleDifference);
         //Debug.Log("raycast: " + Physics2D.Raycast(rb.position, (playerRb.position - rb.position), visionRange).collider);
 
