@@ -44,28 +44,31 @@ public class SceneHandler : MonoBehaviour
         "MathewsHouseScene", // MathewsHouse(12)
         "PaulsHouseScene", // PaulsHouse(13)
         "NadinesHouseScene", // NadinesHouse(14)
-        "TeresasHouseScene" // TeresasHouse(15)
+        "ChurchBasement",   // ChurchBasement (15)
+        "CultLeaderChamber", // CultLeaderChamber (16)
+        "ChurchBasement"    // ChurchBasement @ Cult Leader Chamber (17)
         }; 
        
     private Vector2[] positions = { 
-        new Vector2(10, 0.6f),    // WhisperingInn(0) OK
-        new Vector2(-12, -12),  // Town @ WhisperingInn(1) OK
-        new Vector2(-6, 1),     // Town @ Alex(2) OK
-        new Vector2(-1, -17),   // Town @ Paul(3) OK
-        new Vector2(-15, -4),   // Town @ Nadine(4) OK
-        new Vector2(13, -16),   // Town @ Mathew(5) OK
-        new Vector2(1.7f, 0),     // Town @ Julia(6) OK
-        new Vector2(24, -6),    // Town @ Church(7)
-        new Vector2(14.7f, -1),     // Town @ Teresa(8)
-        new Vector2(7.3f, 8.5f),      // Church (9)
-        new Vector2(5.5f, 0.5f),      // AlexsHouse(10) OK
-        new Vector2(5.5f, 0.5f),      // JuliasHouse(11) 
-        new Vector2(5.5f, 0.5f),      // MathewsHouse(12)
-        new Vector2(5.5f, 0.5f),      // PaulsHouse(13)
-        new Vector2(2.5f, 0.5f),      // NadinesHouse(14)
-        new Vector2(2.5f, 0.5f)       // TeresasHouse(15)
+        new Vector2(-9,-20),    // WhisperingInn(0)
+        new Vector2(-12, -12),  // Town @ WhisperingInn(1)
+        new Vector2(-6, 1),     // Town @ Alex(2)
+        new Vector2(-1, -17),   // Town @ Paul(3)
+        new Vector2(-15, -4),   // Town @ Nadine(4)
+        new Vector2(13, -16),   // Town @ Mathew(5)
+        new Vector2(10, 1),     // Town @ Alex(6)?
+        new Vector2(24, -6),    // Town @ Julia(7)
+        new Vector2(0, -4),     // Town @ Church(8)
+        new Vector2(0, -6),     // Church Scene (9)
+        new Vector2(),          // (10)
+        new Vector2(),          // (11)
+        new Vector2(),          // (12)
+        new Vector2(),          // (13)
+        new Vector2(),          // (14)
+        new Vector2(18, 2),     // Church Basement Scene (15)
+        new Vector2(2, -4),     // Cult Leader Chamber (16)
+        new Vector2(-15, 7),          // ChurchBasement @ Cult Leader Chamber (17)
 
-        
          };
 
 

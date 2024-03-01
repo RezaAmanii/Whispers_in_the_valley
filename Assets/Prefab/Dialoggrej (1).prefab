@@ -1,0 +1,548 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3838792910938503036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8429316807460609095}
+  - component: {fileID: 6027979915534786516}
+  - component: {fileID: 715400826984194397}
+  m_Layer: 5
+  m_Name: DialogueBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8429316807460609095
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838792910938503036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8522090982134525034}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -5.688, y: -267.00082}
+  m_SizeDelta: {x: 46.5056, y: 10.2751}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6027979915534786516
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838792910938503036}
+  m_CullTransparentMesh: 1
+--- !u!114 &715400826984194397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3838792910938503036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c3b0c773e577c4849989d9246d358236, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &5134055284700940803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8522090982134525034}
+  - component: {fileID: 2024037888724980527}
+  - component: {fileID: 4255957547399748259}
+  m_Layer: 5
+  m_Name: Dialoggrej (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8522090982134525034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134055284700940803}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8429316807460609095}
+  - {fileID: 4275456586458924066}
+  - {fileID: 1551606587300217393}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 963.4302, y: 606.836}
+  m_SizeDelta: {x: 111.2576, y: 183.6715}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2024037888724980527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134055284700940803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd4c6bfbaebc33f4d866311749d7b04f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTextComponent: {fileID: 5270047308255057157}
+  nameTextComponent: {fileID: 2097317661273710808}
+  dialogueLines:
+  - name: Teresa
+    speech:
+    - Hiya there!
+    - 'Lovely weather we''re having, huh? '
+    - 'Perfect for... oh, nevermind. Forget I said anything! '
+  - name: 'Matthew '
+    speech:
+    - Oh, hey kid.
+    - 'We''ve been having some trouble with the harvest these past few months y''see.
+      Rough relying on the whims of nature. '
+    - 'Well, I have a feeling our luck will turn around very soon... but look at
+      me just blabbering. Run along and enjoy yourself. '
+  - name: Julia
+    speech:
+    - Hi! How does the fresh air feel after so long in the city?
+    - "Did you know that Victor pretty much built this community up from scratch?
+      Amazing, right? It\u2019s important to be grateful for being allowe- uh, able
+      to be a part of this little paradise. "
+    - 'Anyways, you should take it all in before you go. Have fun! '
+  - name: Nadine
+    speech:
+    - "Hello\u2026 how do you do? "
+    - "Sorry, I\u2019m not good at talking to strangers. Nothing to do with you!
+      In fact, you seem really nice. Just, uh, outsiders don\u2019t usually stay
+      here long enough for me to get to know them, so I\u2019m not used to it. Not
+      to say that you\u2019re an outsider! Like Victor said, it\u2019s important
+      that you feel at home! I just meant, um\u2026 "
+    - "Sorry, I\u2019m gonna shut up now. Bye."
+  - name: Paul
+    speech:
+    - "Hey. Alex, right? I\u2019m Paul, nice to meet you. "
+    - "You said you\u2019re here to find some peace and quiet, right? Well, I\u2019m
+      the same way. Lots of us here were lost in one way or another \u2018til we
+      found this place. Victor helped me see the important things in life. "
+    - 'Anyway, have a good rest tonight, yeah? See ya.  '
+  - name: Alex
+    speech:
+    - What in the world...?
+  - name: Victor
+    speech:
+    - Greetings, friend. How are you finding your stay thus far?
+    - 'The church? Ah, yes. It is a marvel, is it not? Religion is the clearest telescope
+      through which we can behold the beauty of creation.  '
+    - 'I am afraid you may not view it at the moment. The day is coming to a close,
+      so you ought to rest. Everything in due time, yes? '
+    - Sweet dreams, Alex.
+  - name: 'Alex '
+    speech:
+    - "Finally, my back\u2019s killing me."
+    - "Ow! Huh\u2026? There\u2019s something hard underneath the mattress. "
+    - ...
+    - A diary?
+    - "Why would that be here? I feel like I shouldn\u2019t, but a peek can\u2019t
+      hurt, right?"
+    - "\u201CDay 1: Dear diary, "
+    - "I can't believe my luck! The people in this valley are incredibly welcoming.
+      They've offered me a cabin to stay in, and it's like something out of a storybook.
+      The air is crisp, the surroundings are serene, and the villagers seem genuinely
+      kind. Maybe I've found my little piece of paradise away from the chaos of the
+      city.\u201D"
+    - 'Oh, a previous tenant. Looks like we have a lot in common. '
+    - "\u201CDay 2: Today, I joined the villagers for a feast in the town square.
+      They have these fascinating traditions. Everyone is so close-knit, like a big
+      family. They told me stories about the valley's ancient customs, and it's all
+      so intriguing. The cabin they provided is cozy, and I'm starting to feel like
+      one of them. "
+    - 'Day 3: Something feels off. It might just be my imagination, but I noticed
+      that the villagers often exchange cryptic glances when they think I''m not
+      looking.  '
+    - "Maybe it's just their way of communicating, but it sends shivers down my spine.
+      I'll keep an eye out and try to figure out if it's just my paranoia.\u201D "
+    - ...
+    - "\u201CDay 4: The villagers' smiles are becoming more strained, and their gestures
+      are starting to seem\u2026 rehearsed? I tried to question Victor about the
+      strange mood, but he deflected every inquiry. It's like they're guarding a
+      dark secret. "
+    - "The sense of impending doom is suffocating, and I fear I'm slowly going insane.
+      Will try to investigate further tomorrow, I must be imagining things.\u201D "
+    - "\u2026"
+    - "\u201CDay 5: I can hear them chanting outside my cabin. I\u2019ve blockaded
+      the door with whatever I could find, but I fear it won\u2019t keep them out
+      for long. I don't know what they have planned, but it can't be good. I think
+      I\u2019m done. If someone else, god forbid, finds this diary, please be warned.
+      Get far away from here as soon as you can, while you still can.  "
+    - "My name is Eleanor Radford. Please don\u2019t forget me.\u201D "
+    - ...
+    - "Is this some sort of bad joke\u2026? But why would they do something like
+      that?  "
+    - "Is this some sort of bad joke\u2026? But why would they do something like
+      that?  "
+    - "\u2026I can\u2019t just sit here and wait to find out. "
+  - name: Alex
+    speech:
+    - '"Size:"'
+  - name: Alex
+    speech:
+    - '"Hardness:"'
+  - name: Alex
+    speech:
+    - '"Purity:"'
+  - name: Alex
+    speech:
+    - '"Miniscule"'
+  - name: Alex
+    speech:
+    - '"Small"'
+  - name: Alex
+    speech:
+    - '"Medium"'
+  - name: Alex
+    speech:
+    - '"Large"'
+  - name: Alex
+    speech:
+    - '"5"'
+  - name: Alex
+    speech:
+    - '"6"'
+  - name: Alex
+    speech:
+    - '"7"'
+  - name: Alex
+    speech:
+    - '"8"'
+  - name: Alex
+    speech:
+    - '"Impure"'
+  - name: Alex
+    speech:
+    - '"Middling"'
+  - name: Alex
+    speech:
+    - '"Pure"'
+  - name: Alex
+    speech:
+    - '"Flawless"'
+  textSpeed: 0.03
+  spacePressSound: {fileID: 8300000, guid: 99ad715d8c15ec347b9d802deddab30e, type: 3}
+  audioSource: {fileID: 0}
+  index: 0
+--- !u!222 &4255957547399748259
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5134055284700940803}
+  m_CullTransparentMesh: 1
+--- !u!1 &7664792229939507212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4275456586458924066}
+  - component: {fileID: 7800397755000958586}
+  - component: {fileID: 2097317661273710808}
+  m_Layer: 5
+  m_Name: NameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4275456586458924066
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664792229939507212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8522090982134525034}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -264.12, y: -312}
+  m_SizeDelta: {x: 264.1163, y: -33.9216}
+  m_Pivot: {x: 0, y: 1}
+--- !u!222 &7800397755000958586
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664792229939507212}
+  m_CullTransparentMesh: 1
+--- !u!114 &2097317661273710808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7664792229939507212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 26
+  m_fontSizeBase: 26
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -0.000030517578, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &7878035968682189271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551606587300217393}
+  - component: {fileID: 2669028201655932333}
+  - component: {fileID: 5270047308255057157}
+  m_Layer: 5
+  m_Name: 'DialogueText '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1551606587300217393
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878035968682189271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8522090982134525034}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -44.24518, y: -289.41306}
+  m_SizeDelta: {x: 748.2784, y: 81.5673}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2669028201655932333
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878035968682189271}
+  m_CullTransparentMesh: 1
+--- !u!114 &5270047308255057157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7878035968682189271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 17
+  m_fontSizeBase: 17
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
