@@ -44,7 +44,11 @@ public class SceneHandler : MonoBehaviour
         "MathewsHouseScene", // MathewsHouse(12)
         "PaulsHouseScene", // PaulsHouse(13)
         "NadinesHouseScene", // NadinesHouse(14)
-        "TeresasHouseScene" // TeresasHouse(15)
+        "TeresasHouseScene", // TeresasHouse(15)
+        "ChurchBasement",    // ChurchBasement(16)
+        "CultLeaderChamber",    // ChurchBasement(17)
+        "ChurchBasement",    // ChurchBasement(18)
+        "ChurchScene"      // Church(19)
         }; 
        
     private Vector2[] positions = { 
@@ -63,7 +67,12 @@ public class SceneHandler : MonoBehaviour
         new Vector2(5.5f, 0.5f),      // MathewsHouse(12)
         new Vector2(5.5f, 0.5f),      // PaulsHouse(13)
         new Vector2(2.5f, 0.5f),      // NadinesHouse(14)
-        new Vector2(2.5f, 0.5f)       // TeresasHouse(15)
+        new Vector2(2.5f, 0.5f),       // TeresasHouse(15)
+        new Vector2(18, 2),       // ChurchBasement(16)
+        new Vector2(2, -4),       // CultLeaderChamber(17)
+        new Vector2(-15, 7),       // ChurchBasement(18)
+        new Vector2(2, 9)       // ChurchScene(19)
+
 
         
          };

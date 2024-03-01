@@ -19,7 +19,9 @@ public class LockedEvent : MonoBehaviour
     {
         if (playerInventory.Contains(RequiredId))
             unlockEvent.Invoke();
-        else
+        else{
             failedToUnlockEvent.Invoke();
+            Debug.Log(" test");
+        }
     }
 }
