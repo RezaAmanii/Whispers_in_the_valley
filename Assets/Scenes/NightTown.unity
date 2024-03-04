@@ -1961,7 +1961,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1502142363}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &854136453
 MonoBehaviour:
@@ -2341,11 +2341,6 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6263717705970775646, guid: 1b45ac17495ab5b4eadb1e3982031cc1, type: 3}
   m_PrefabInstance: {fileID: 1284377029}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1502142363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2361361020755960588, guid: 1dc062398410fd84586044c37823719f, type: 3}
-  m_PrefabInstance: {fileID: 2111662462}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1633111417
 PrefabInstance:
@@ -2970,7 +2965,7 @@ PrefabInstance:
     - target: {fileID: 5550523992704046902, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 914625193}
+      objectReference: {fileID: 338531705}
     - target: {fileID: 5550523992704046902, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3299,9 +3294,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2640282006618668882, guid: 1dc062398410fd84586044c37823719f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 914625193}
     - targetCorrespondingSourceObject: {fileID: 3381433441056975076, guid: 1dc062398410fd84586044c37823719f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2111662470}
@@ -3470,3 +3462,4 @@ SceneRoots:
   - {fileID: 2111662462}
   - {fileID: 715347248}
   - {fileID: 5717483346455527921}
+  - {fileID: 854136452}

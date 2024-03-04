@@ -9,6 +9,8 @@ public class CheckPoint : MonoBehaviour
     private GameMaster gameMaster;
     public GameObject popupTextPrefab;
     public TMP_Text popupText;
+    private DialogueEvent dialogEvent;
+    public int dialogIndex;
 
     private void Start()
     {
