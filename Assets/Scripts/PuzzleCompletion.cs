@@ -60,7 +60,7 @@ public class PuzzleCompletion : MonoBehaviour
                     lockedDoor.SetActive(false);
                     sceneTransitionTrigger.SetActive(true);
                 }
-                dialogueEvent.run(24);
+                dialogueEvent.run(23);
 
             }
         }
@@ -68,10 +68,10 @@ public class PuzzleCompletion : MonoBehaviour
 
     public bool IsPuzzleComplete()
     {
-        // kolla om det är rätt
+        // kolla om det ?r r?tt
         for (int i = 0; i < correctPositions.Count; i++)
         {
-            // få nuvarande position
+            // f? nuvarande position
             float stoneXPosition = transform.GetChild(i).position.x;
 
             // Check if the stone is within the correct range

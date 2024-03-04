@@ -3450,6 +3450,10 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1357565742}
+    - target: {fileID: 1581604609252870999, guid: 4c7b9f92daf694af3abb2b5847fb442a, type: 3}
+      propertyPath: dialogIndex
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 2229178993003611684, guid: 4c7b9f92daf694af3abb2b5847fb442a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.41

@@ -622,6 +622,7 @@ MonoBehaviour:
   id: 12
   audioSource: {fileID: 1699570760}
   pling: {fileID: 8300000, guid: 99ad715d8c15ec347b9d802deddab30e, type: 3}
+  dialogIndex: 32
 --- !u!58 &369877076
 CircleCollider2D:
   m_ObjectHideFlags: 0

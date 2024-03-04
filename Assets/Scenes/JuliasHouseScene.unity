@@ -3326,6 +3326,7 @@ MonoBehaviour:
   id: 13
   audioSource: {fileID: 821195969}
   pling: {fileID: 8300000, guid: 99ad715d8c15ec347b9d802deddab30e, type: 3}
+  dialogIndex: 33
 --- !u!212 &1939844969
 SpriteRenderer:
   m_ObjectHideFlags: 0
