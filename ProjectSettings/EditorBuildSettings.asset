@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PaulsHouseScene.unity
     guid: 18284bb74fcbea0469be2f7415044136
+  - enabled: 1
+    path: Assets/Scenes/ChurchBasement.unity
+    guid: b168333f7bc18c045a009f215b23f866
+  - enabled: 1
+    path: Assets/Scenes/CultLeaderChamber.unity
+    guid: 081b32f152f548444b220ebb00034e4e
   m_configObjects: {}
