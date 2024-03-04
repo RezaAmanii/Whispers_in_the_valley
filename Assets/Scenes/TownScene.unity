@@ -1448,7 +1448,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   RequiredId: 0
-  RequiredSpokenTo: 0
+  RequiredSpokenTo: 4
 --- !u!114 &636002875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3933361244032388075, guid: 1dc062398410fd84586044c37823719f, type: 3}
