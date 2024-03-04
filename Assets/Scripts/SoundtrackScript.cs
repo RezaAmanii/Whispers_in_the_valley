@@ -13,6 +13,10 @@ public class SoundtrackScript : MonoBehaviour
     private static SoundtrackScript instance;
     private AudioSource audioSource;
 
+    private GameMaster GMscript;
+
+    private bool playSecondSoundtrack = false;
+
     private void Awake()
     {
         // Ensure only one instance of SoundtrackScript exists
@@ -53,14 +57,19 @@ public class SoundtrackScript : MonoBehaviour
         audioSource.Play();
     }
 
-    private void PlaySecondSoundtrack()
+    public void PlaySecondSoundtrack()
     {
-        audioSource.clip = secondSoundtrack;
-        audioSource.volume = volume;
-        audioSource.Play();
+        if (!playSecondSoundtrack)
+        {
+            audioSource.clip = secondSoundtrack;
+            audioSource.volume = volume;
+            audioSource.Play();
+
+            playSecondSoundtrack=true;
+        }
     }
 
-    private void ToggleSoundtrack()
+    public void ToggleSoundtrack()
     {
         if (audioSource.clip == firstSoundtrack)
         {

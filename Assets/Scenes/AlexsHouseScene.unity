@@ -1319,6 +1319,7 @@ GameObject:
   - component: {fileID: 1046520321}
   - component: {fileID: 1046520320}
   - component: {fileID: 1046520319}
+  - component: {fileID: 1046520323}
   m_Layer: 0
   m_Name: AlexsDoor
   m_TagString: Untagged
@@ -1450,6 +1451,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1046520323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046520317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1080562fbd219ff4584c73b044b20517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1217851307

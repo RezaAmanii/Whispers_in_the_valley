@@ -4,18 +4,7 @@
 
 //public class SFXmanager : MonoBehaviour
 //{
-//<<<<<<< Updated upstream
-//    // Start is called before the first frame update
-//    void Start()
-//    {
-        
-//    }
-
-//    // Update is called once per frame
-//    void Update()
-//    {
-        
-//=======
+ 
 //    public AudioClip dialogueSound;
 //    public AudioClip doorOpenSound;
 //    public AudioClip itemPickupSound;
@@ -57,6 +46,6 @@
 //    public void PlayItemPickupSound()
 //    {
 //        audioSource.PlayOneShot(itemPickupSound);
-//>>>>>>> Stashed changes
+
 //    }
 //}

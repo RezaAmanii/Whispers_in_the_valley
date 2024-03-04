@@ -72,6 +72,7 @@ public class TestingDialogue : MonoBehaviour
         // Testar att trigga natten med sängen.
         if(index == 7){
             GMscript.SetIsNight();
+            GameObject.Find("Soundyyy").GetComponent<SoundtrackScript>().PlaySecondSoundtrack();
         }
             
         if (isActive) { return; }
