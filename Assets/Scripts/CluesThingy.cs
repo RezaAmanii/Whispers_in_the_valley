@@ -1,41 +1,4 @@
-//using System;
-//using System.Collections;
-//using System.Collections.Generic;
-//using TMPro;
-//using UnityEditor.Experimental.GraphView;
-//using UnityEngine;
-
-//public class CluesThingy : MonoBehaviour
-//{
-//    public GameObject dialogueBox;
-//    private PlayerMovement playerMovement;
-//    private bool isActive = false;
-
-//    void Start()
-//    {
-//        gameObject.SetActive(false);
-//        playerMovement = FindObjectOfType<PlayerMovement>();
-
-//    }
-
-//    void Update()
-//    {
-
-//        if (Input.GetKeyDown(KeyCode.E))
-//        {
-
-//            if (isActive) { return; }
-//            isActive = true;
-
-//            gameObject.SetActive(true);
-
-//        }
-
-//    }
-
-//}
-
-
+// !!!! THIS IS THE ONE THAT WORKS DO NOT DELETE I AM BEGGING YOU !!!!
 
 using System.Collections;
 using System.Collections.Generic;
@@ -46,6 +9,7 @@ using UnityEngine;
 public class CluesThingy : MonoBehaviour
 {
     public Canvas dialogueCanvas; // Reference to the canvas containing the dialogue box
+    public PlayerMovement playerMovementScript;
     private bool isInRange = false; // Flag to track if the player is in range
 
     void Start()
@@ -86,122 +50,14 @@ public class CluesThingy : MonoBehaviour
     void OpenDialogue()
     {
         dialogueCanvas.enabled = true;
+        playerMovementScript.enabled = false;
         // Additional logic to handle any other setup for the dialogue box
     }
 
     void CloseDialogue()
     {
         dialogueCanvas.enabled = false;
+        playerMovementScript.enabled = true;
     }
 }
 
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class CluesThingy : MonoBehaviour
-//{
-//    public GameObject dialogueBox;
-//    public PlayerMovement playerMovementScript; // Reference to the player movement script
-
-//    private bool inRange = false;
-//    private bool dialogueActive = false;
-
-//    private void Awake()
-//    {
-//        dialogueBox.SetActive(false);
-//    }
-
-//    private void Update()
-//    {
-//        if (inRange && Input.GetKeyDown(KeyCode.E) && !dialogueActive)
-//        {
-//            ToggleDialogue(true);
-//        }
-//        else if ((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)) && dialogueActive)
-//        {
-//            ToggleDialogue(false);
-//        }
-//    }
-
-//    void ToggleDialogue(bool activeState)
-//    {
-//        dialogueActive = activeState;
-//        dialogueBox.SetActive(activeState);
-//        playerMovementScript.enabled = !activeState; // Enable/disable the player movement script
-//    }
-
-//    private void OnTriggerEnter(Collider other)
-//    {
-//        if (other.CompareTag("MC"))
-//        {
-//            inRange = true;
-//        }
-//    }
-
-//    private void OnTriggerExit(Collider other)
-//    {
-//        if (other.CompareTag("MC"))
-//        {
-//            inRange = false;
-//        }
-//    }
-//}
-
-
-
-
-
-
-
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class CluesThingy : MonoBehaviour
-//{
-//    public GameObject dialogueBox;
-
-//    private bool inRange = false;
-
-
-//    private void Awake()
-//    {
-//        dialogueBox.SetActive(false);
-//    }
-
-//    private void OnTriggerEnter(Collider other)
-//    {
-//        if (other.CompareTag("MC"))
-//        {
-//            inRange = true;
-//        }
-//    }
-
-//    private void OnTriggerExit(Collider other)
-//    {
-//        if (other.CompareTag("MC"))
-//        {
-//            inRange = false;
-//            HideDialogue();
-//        }
-//    }
-
-//    void Update()
-//    {
-//        if (inRange && Input.GetKeyDown(KeyCode.E))
-//        {
-//            ToggleDialogue();
-//        }
-//    }
-
-//    void ToggleDialogue()
-//    {
-//        dialogueBox.SetActive(!dialogueBox.activeSelf);
-//    }
-
-//    void HideDialogue()
-//    {
-//        dialogueBox.SetActive(false);
-//    }
-//}
