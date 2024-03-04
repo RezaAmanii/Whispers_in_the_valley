@@ -10,6 +10,8 @@ public class PickUp : MonoBehaviour
     public int id;
     public AudioSource audioSource;
     public AudioClip pling;
+    private DialogueEvent dialogEvent;
+    public int dialogIndex;
 
     private void Start()
     {
@@ -28,7 +30,7 @@ public class PickUp : MonoBehaviour
         {
             Destroy(gameObject);
         }
-            
+        dialogEvent = gameObject.AddComponent<DialogueEvent>();
     }
 
     public void PlayItemPickupSound()
@@ -42,6 +44,7 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            dialogEvent.run(dialogIndex);
             PlayItemPickupSound();
             for(int i = 0; i < inventory.slots.Length; i++)
             {
