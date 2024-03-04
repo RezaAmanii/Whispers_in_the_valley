@@ -13,6 +13,7 @@ public class PickUp : MonoBehaviour
 
     private void Start()
     {
+        
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         for(int i = 0; i < inventory.slots.Length; i++)
         {
@@ -32,6 +33,7 @@ public class PickUp : MonoBehaviour
 
     public void PlayItemPickupSound()
     {
+
         audioSource.PlayOneShot(pling);
 
     }

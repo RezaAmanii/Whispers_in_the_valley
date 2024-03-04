@@ -1388,11 +1388,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6650317035464804973, guid: 51455935907784ba2b4501666f7aac5a, type: 3}
   m_PrefabInstance: {fileID: 1544276011}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &629268953 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6998961820647439689, guid: acf60d2776d8549158365ca95041f9fb, type: 3}
-  m_PrefabInstance: {fileID: 2129213777}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &636002868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8917894005255920842, guid: 1dc062398410fd84586044c37823719f, type: 3}
@@ -1453,7 +1448,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   RequiredId: 0
-  RequiredHasSpoken: 4
+  RequiredSpokenTo: 0
 --- !u!114 &636002875 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3933361244032388075, guid: 1dc062398410fd84586044c37823719f, type: 3}
@@ -4388,7 +4383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].speech.Array.size
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[23].speech.Array.size
@@ -4806,21 +4801,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].speech.Array.data[19]
-      value: "My name is Eleanor Radford. Please don\u2019t forget me.\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
-      propertyPath: dialogueLines.Array.data[7].speech.Array.data[20]
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
-      propertyPath: dialogueLines.Array.data[7].speech.Array.data[21]
+      propertyPath: dialogueLines.Array.data[7].speech.Array.data[20]
       value: "Is this some sort of sick joke\u2026? But why would they do something
         like that?  "
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
-      propertyPath: dialogueLines.Array.data[7].speech.Array.data[22]
+      propertyPath: dialogueLines.Array.data[7].speech.Array.data[21]
       value: "\u2026I can\u2019t just sit here and wait to find out. I need to get
         back to my car and get the hell out of here."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[7].speech.Array.data[22]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[27].speech.Array.data[10]
