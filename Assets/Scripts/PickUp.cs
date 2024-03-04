@@ -8,9 +8,12 @@ public class PickUp : MonoBehaviour
     private Inventory inventory;
     public GameObject itemButton;
     public int id;
+    public AudioSource audioSource;
+    public AudioClip pling;
 
     private void Start()
     {
+        
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
         for(int i = 0; i < inventory.slots.Length; i++)
         {
@@ -28,10 +31,18 @@ public class PickUp : MonoBehaviour
             
     }
 
+    public void PlayItemPickupSound()
+    {
+
+        audioSource.PlayOneShot(pling);
+
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            PlayItemPickupSound();
             for(int i = 0; i < inventory.slots.Length; i++)
             {
                 if(inventory.isFull[i] == false)

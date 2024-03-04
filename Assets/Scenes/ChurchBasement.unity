@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 0}
+  playerMovementScript: {fileID: 0}
 --- !u!1 &45353434
 GameObject:
   m_ObjectHideFlags: 0
@@ -5855,7 +5856,8 @@ MonoBehaviour:
     Purity is \u2018Middling.\r\n5. The \u2018Pure\u2019 gem is Medium-sized.\r\n6.
     Emerald is less pure than Ruby, but more pure than Sapphire.\r\n7. The smallest
     gem is also the softest.\r\n8. Sapphire\u2019s Hardness is less than Emerald\u2019s
-    Hardness.\r\n9. The largest gem is the least pure.\r\n"
+    Hardness.\r\n9. The largest gem is the least pure.\r\n\nCrystals in order from
+    top to bottom: Ruby, Sapphire, Emerald, Amethyst."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -5882,8 +5884,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.6
-  m_fontSizeBase: 34.6
+  m_fontSize: 31.96
+  m_fontSizeBase: 31.96
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10603,7 +10605,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 23
+          m_IntArgument: 28
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -14391,6 +14393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueCanvas: {fileID: 24577699}
+  playerMovementScript: {fileID: 0}
 --- !u!61 &1700023012
 BoxCollider2D:
   m_ObjectHideFlags: 0
