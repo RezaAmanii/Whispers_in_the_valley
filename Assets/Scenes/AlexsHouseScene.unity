@@ -677,6 +677,7 @@ MonoBehaviour:
   id: 11
   audioSource: {fileID: 2077562245}
   pling: {fileID: 8300000, guid: 99ad715d8c15ec347b9d802deddab30e, type: 3}
+  dialogIndex: 30
 --- !u!58 &304510790
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1208,6 +1209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupTextPrefab: {fileID: 394791018060310565, guid: fe022d5cb235c4cbe99a78d72a8fa1cd, type: 3}
   popupText: {fileID: 0}
+  dialogIndex: 0
 --- !u!61 &642677463
 BoxCollider2D:
   m_ObjectHideFlags: 0

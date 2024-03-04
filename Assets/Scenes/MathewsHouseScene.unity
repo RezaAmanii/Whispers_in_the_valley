@@ -420,6 +420,7 @@ MonoBehaviour:
   id: 15
   audioSource: {fileID: 1226040285}
   pling: {fileID: 8300000, guid: 99ad715d8c15ec347b9d802deddab30e, type: 3}
+  dialogIndex: 31
 --- !u!95 &174606489
 Animator:
   serializedVersion: 5

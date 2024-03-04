@@ -1442,7 +1442,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 36
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4719,17 +4719,17 @@ PrefabInstance:
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[30].speech.Array.data[0]
       value: I found a key! There's a red ribbon attached to the key with the name
-        Julia.
+        "Julia".
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[31].speech.Array.data[0]
-      value: I found a key! Tied to the key is a thin braid with glas beads spelling
-        T-E-R-E-S-A.
+      value: I found a key! Tied to the key is a thin braid with glass beads spelling
+        "T-E-R-E-S-A".
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[32].speech.Array.data[0]
       value: I found a key! On the keychain there's a worn metal badge stamped with
-        the name Mathew.
+        the name "Mathew".
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[33].speech.Array.data[0]
@@ -4746,7 +4746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[36].speech.Array.data[0]
-      value: I'm not tired yet. I should meet with the residents.
+      value: I'm not tired yet. I should meet with the locals first.
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[37].speech.Array.data[0]
@@ -6838,6 +6838,10 @@ PrefabInstance:
       value: DialogueEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5919771177402529473, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5919771177402529473, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -6870,6 +6874,10 @@ PrefabInstance:
       value: DialogueEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6187905214517448571, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6187905214517448571, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -6898,8 +6906,16 @@ PrefabInstance:
       value: DialogueEvent, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6296895208956041133, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296895208956041133, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728561363315231822, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7859948387991013187, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: m_Enabled
@@ -6932,6 +6948,10 @@ PrefabInstance:
     - target: {fileID: 8184128888719977752, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogueEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8184128888719977752, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 8184128888719977752, guid: 1dc062398410fd84586044c37823719f, type: 3}
       propertyPath: failedToUnlockEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
