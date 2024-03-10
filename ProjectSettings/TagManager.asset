@@ -8,6 +8,7 @@ TagManager:
   - Canvas
   - NPC
   - MC
+  - Sound
   layers:
   - Default
   - TransparentFX

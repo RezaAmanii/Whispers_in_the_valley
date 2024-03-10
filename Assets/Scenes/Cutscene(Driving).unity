@@ -10929,7 +10929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23af7bc1b32f7e346a78a0d125d7e3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: TownScene
+  nextScene: Cutscene(Arrival)
 --- !u!1 &1549529945
 GameObject:
   m_ObjectHideFlags: 0

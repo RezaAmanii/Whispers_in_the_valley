@@ -71,7 +71,7 @@ public class SceneHandler : MonoBehaviour
         new Vector2(18, 2),       // ChurchBasement(16)
         new Vector2(2, -4),       // CultLeaderChamber(17)
         new Vector2(-15, 7),       // ChurchBasement(18)
-        new Vector2(2, 9)       // ChurchScene(19)
+        new Vector2(10, 23)       // ChurchScene(19)
 
 
         
@@ -102,5 +102,10 @@ public class SceneHandler : MonoBehaviour
         
     }
 
-    
+    public void ChangeScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
+
+
 }

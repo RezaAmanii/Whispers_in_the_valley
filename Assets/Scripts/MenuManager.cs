@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
 
     private void Update()
     {
-        if (InputManager.instance.MenuOpenCloseInput)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (!isPaused)
             {

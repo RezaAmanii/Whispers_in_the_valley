@@ -1335,6 +1335,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b05b2e4543314148875bfdcafd6d111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &499086749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 947998515436400192, guid: 1dc062398410fd84586044c37823719f, type: 3}
+  m_PrefabInstance: {fileID: 2111662462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &499086750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499086749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfff6ed06d80dde42a0eb389fa686d59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &500713669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1936,6 +1953,8 @@ GameObject:
   - component: {fileID: 854136455}
   - component: {fileID: 854136454}
   - component: {fileID: 854136453}
+  - component: {fileID: 854136457}
+  - component: {fileID: 854136458}
   m_Layer: 0
   m_Name: Car do be bad
   m_TagString: Untagged
@@ -1985,10 +2004,10 @@ MonoBehaviour:
   interactableEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 854136453}
-        m_TargetAssemblyTypeName: DialogueEvent, Assembly-CSharp
+      - m_Target: {fileID: 854136457}
+        m_TargetAssemblyTypeName: LockedEvent, Assembly-CSharp
         m_MethodName: run
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2069,6 +2088,62 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.96, y: 1.35}
   m_EdgeRadius: 0
+--- !u!114 &854136457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854136451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b04481dbfa5891e409b67c525c345aa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unlockEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 854136458}
+        m_TargetAssemblyTypeName: SceneHandler, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: FinalCutScene
+          m_BoolArgument: 0
+        m_CallState: 2
+  failedToUnlockEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 854136453}
+        m_TargetAssemblyTypeName: DialogueEvent, Assembly-CSharp
+        m_MethodName: run
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 26
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  RequiredId: 19
+  RequiredSpokenTo: 0
+--- !u!114 &854136458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854136451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c45c2eb8429ab2448304d41db24608f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1058560298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3285,7 +3360,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Town
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8621945346512041895, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 499086750}
+    - target: {fileID: 8621945346512041895, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: run
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621945346512041895, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8621945346512041895, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      propertyPath: interactableEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 37
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6338491841524298618, guid: 1dc062398410fd84586044c37823719f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3301,6 +3393,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5187920565618027417, guid: 1dc062398410fd84586044c37823719f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2111662468}
+    - targetCorrespondingSourceObject: {fileID: 947998515436400192, guid: 1dc062398410fd84586044c37823719f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 499086750}
   m_SourcePrefab: {fileID: 100100000, guid: 1dc062398410fd84586044c37823719f, type: 3}
 --- !u!114 &2111662463 stripped
 MonoBehaviour:

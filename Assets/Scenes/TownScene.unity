@@ -2381,6 +2381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soundyyy
       objectReference: {fileID: 0}
+    - target: {fileID: 1413623582186073256, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
+      propertyPath: m_TagString
+      value: Sound
+      objectReference: {fileID: 0}
     - target: {fileID: 2701295755359240408, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.78
@@ -2428,6 +2432,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1413623582186073256, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2015809832}
+    - targetCorrespondingSourceObject: {fileID: 1413623582186073256, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2015809833}
   m_SourcePrefab: {fileID: 100100000, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
 --- !u!1 &1161676931 stripped
 GameObject:
@@ -2499,7 +2506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 872017929}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1205497885
@@ -2892,6 +2899,10 @@ PrefabInstance:
     - target: {fileID: 6375908650490943127, guid: 04f842e7a7d012e41a017b03f9105b8b, type: 3}
       propertyPath: m_Name
       value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6375908650490943127, guid: 04f842e7a7d012e41a017b03f9105b8b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3618,7 +3629,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4313,9 +4324,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1041846730}
     m_Modifications:
+    - target: {fileID: 1551606587300217393, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1315.3916
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551606587300217393, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 232.3188
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551606587300217393, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -69.37042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551606587300217393, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -429.39667
+      objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.size
-      value: 38
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].name
@@ -4382,6 +4409,14 @@ PrefabInstance:
       value: Alex
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[38].name
+      value: Alex
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[3].speech.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].speech.Array.size
       value: 22
       objectReference: {fileID: 0}
@@ -4444,6 +4479,26 @@ PrefabInstance:
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[37].speech.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[38].speech.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[3].speech.Array.data[1]
+      value: "Sorry, I\u2019m not good at talking to strangers. Nothing to do with
+        you! In fact, you seem really nice. Just, uh, outsiders don\u2019t usually
+        stay here long enough for me to get to know them, so I\u2019m not used to
+        it. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[3].speech.Array.data[2]
+      value: "Not to say that you\u2019re an outsider! Like Victor said, it\u2019s
+        important that you feel at home! I just meant, um\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[3].speech.Array.data[3]
+      value: "Sorry, I\u2019m gonna shut up now. Bye."
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].speech.Array.data[0]
@@ -4729,7 +4784,7 @@ PrefabInstance:
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[32].speech.Array.data[0]
       value: I found a key! On the keychain there's a worn metal badge stamped with
-        the name "Mathew".
+        the name "Matthew".
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[33].speech.Array.data[0]
@@ -4751,6 +4806,11 @@ PrefabInstance:
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[37].speech.Array.data[0]
       value: Door is locked!
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: dialogueLines.Array.data[38].speech.Array.data[0]
+      value: My car key! I'm not spending another damn second in this godforsaken
+        place...
       objectReference: {fileID: 0}
     - target: {fileID: 2024037888724980527, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: dialogueLines.Array.data[7].speech.Array.data[10]
@@ -4883,6 +4943,34 @@ PrefabInstance:
       propertyPath: dialogueLines.Array.data[28].speech.Array.data[15]
       value: ...
       objectReference: {fileID: 0}
+    - target: {fileID: 2097317661273710808, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097317661273710808, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 2097317661273710808, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275456586458924066, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 407.6891
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275456586458924066, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -62.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275456586458924066, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4275456586458924066, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -355
+      objectReference: {fileID: 0}
     - target: {fileID: 5134055284700940803, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: m_Name
       value: Dialoggrej (1)
@@ -4890,6 +4978,46 @@ PrefabInstance:
     - target: {fileID: 5134055284700940803, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 77bd024fd035e9142b902aa32e02a432, type: 2}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 7791164401175911817, guid: 77bd024fd035e9142b902aa32e02a432, type: 2}
+    - target: {fileID: 5270047308255057157, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429316807460609095, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 84.7319
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429316807460609095, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 25.1708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429316807460609095, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4.3039
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429316807460609095, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -391.2053
       objectReference: {fileID: 0}
     - target: {fileID: 8522090982134525034, guid: 25bae2c6337ba674c89f24f351e9dbda, type: 3}
       propertyPath: m_Pivot.x
@@ -5322,6 +5450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996746931}
   - component: {fileID: 1996746930}
+  - component: {fileID: 1996746932}
   m_Layer: 0
   m_Name: MENU
   m_TagString: Untagged
@@ -5363,6 +5492,18 @@ Transform:
   - {fileID: 1291451727}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996746932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996746929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2438a28182740d43bf3699e8311b50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2015809826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1413623582186073256, guid: 4a5d4a562b049064b9ef0fd59c183a0f, type: 3}
@@ -5380,6 +5521,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2438a28182740d43bf3699e8311b50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &2015809833
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015809826}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2048961295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7289,7 +7526,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 495891018159728925, guid: e3372464be0aa4a40a9bb4ed2d6c13dc, type: 3}
       propertyPath: m_Mass
-      value: 0.0001
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1517468777799688336, guid: e3372464be0aa4a40a9bb4ed2d6c13dc, type: 3}
       propertyPath: id.Array.size
