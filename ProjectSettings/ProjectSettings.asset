@@ -623,8 +623,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Whispers_in_the_valley
-  metroPackageVersion: 
+  metroPackageName: Whispersinthevalley
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -632,7 +632,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Whispers_in_the_valley
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Whispers_in_the_valley
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -696,7 +696,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 94f82a88-0e2e-4ba5-beac-7fe9c7d31057
   framebufferDepthMemorylessMode: 0

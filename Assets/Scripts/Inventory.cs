@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NewMonoBehaviour : MonoBehaviour
+public class Inventory : MonoBehaviour
 {
-    // Use this for initialization
-    void Start()
+    public bool[] isFull;
+    public int[] id;
+    public GameObject[] slots;
+
+    public bool Contains(int id)
     {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (this.id[i] == id) 
+                return true;
+        }
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        return false;
     }
 }
